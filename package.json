@@ -1,0 +1,20 @@
+{
+  "name": "warwick-SCS-prototype",
+  "version": "1.0.0",
+  "description": "website proto type",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " ./node_modules/.bin/gulp default"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^4.0.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^4.0.2",
+    "nodemon": "^1.18.4",
+    "nunjucks": "^3.1.3"
+  }
+}

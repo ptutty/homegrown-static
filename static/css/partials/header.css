@@ -1,0 +1,8 @@
+header {
+  background: #eee;
+  height: 100px; }
+  header ul {
+    margin: 0; }
+  header li {
+    list-style: none;
+    color: blue; }
