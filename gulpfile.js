@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
         .on('error', sass.logError))
-        .pipe(gulp.dest('static/css/' && '/docs/static_files/css/'))
+        .pipe(gulp.dest('static/css/' && 'docs/static_files/css/'))
         .pipe(livereload());
 });
 

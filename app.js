@@ -1,4 +1,5 @@
 const express = require( 'express' ) ;
+
 const nunjucks = require( 'nunjucks' ) ;
 const app = express() ;
 let noCaching = true;
@@ -17,6 +18,18 @@ nunjucks.configure('views', {
 app.get( '/', function( req, res ) {
     return res.render( 'index.njk' ) ;
 } ) ;
+
+app.get( '/:page', function( req, res ) {
+  let filename = req.params.page.replace(".html", "");
+  return res.render( filename + '.njk' ) ;
+} ) ;
+
+
+app.get( '/advice-and-appointments.html', function( req, res ) {
+    return res.render( 'advice-and-appointments.njk' ) ;
+} ) ;
+
+
 
 // setup port and listen
 app.listen( 3000 ) ;
