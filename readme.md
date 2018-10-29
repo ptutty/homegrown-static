@@ -28,3 +28,9 @@ Git bash (Windows)
 3. npm install - this will install all the Node modules required
 4. npm start - view at localhost:3000
 5. Install LiveReload extension for chrome (and enable for tab your on) to get this working
+
+## Build and publish to gitHub pages
+
+1. run 'gulp compileAll' from the project directory (if this errors make sure you have Gulp installed globally)
+2. commit and push to gitHub
+3. view static html at https://warwick-careers-it.github.io/student-careers-prototype-kit/docs/

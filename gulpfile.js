@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
         .on('error', sass.logError))
-        .pipe(gulp.dest('static/css/'))
+        .pipe(gulp.dest('static/css/' && '/docs/static_files/css/'))
         .pipe(livereload());
 });
 
@@ -54,3 +54,12 @@ gulp.task('server', () => {
 });
 
 gulp.task('default', ['server', 'watch' ,'sass']);
+
+gulp.task('compileAll', function() {
+  // gulp.start('dir');
+  gulp.start('njk');
+  // gulp.start('sass');
+  // config.js.doCompress ? gulp.start('jsMinify') : gulp.start('js');
+  // gulp.start('vendorJS');
+  // gulp.start('vendorCSS');
+});
