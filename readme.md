@@ -26,11 +26,18 @@ Git bash (Windows)
 1. Clone the code source into your home directory
 2. Navigated to this directory from Terminal
 3. npm install - this will install all the Node modules required
-4. npm start - view at localhost:3000
-5. Install LiveReload extension for chrome (and enable for tab your on) to get this working
+4. npm start
+5. view at localhost:3000
+6. Install LiveReload extension for chrome and enable
 
 ## Build and publish to gitHub pages
 
 1. run 'gulp compileAll' from the project directory (if this errors make sure you have Gulp installed globally)
 2. commit and push to gitHub
 3. view static html at https://warwick-careers-it.github.io/student-careers-prototype-kit/docs/
+
+
+
+## writing code
+
+1. You write your Sass in /sass/app.scss and the Prototype Kit will compile it into the CSS used in your page (found in /docs/css/app.css). The app watches your files so this will happen automatically.

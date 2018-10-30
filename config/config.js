@@ -1,6 +1,6 @@
 module.exports = {
   paths: {
-    public_dir: 'docs',
+    public_dir: 'dist',
     assets_dir: 'static',
     views_dir: 'views',
     vendor_dir: 'vendor',
