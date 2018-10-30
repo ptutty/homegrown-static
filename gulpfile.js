@@ -54,7 +54,7 @@ gulp.task('server', () => {
 
 gulp.task('default', ['server', 'watch' ,'sass']);
 
-gulp.task('deploy-dist', function() {
+gulp.task('build', function() {
   // create static files
   gulp.start('njk');
 
