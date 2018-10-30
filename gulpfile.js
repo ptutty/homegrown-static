@@ -27,9 +27,11 @@ gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
         .on('error', sass.logError))
-        .pipe(gulp.dest('static/css/' && 'dist/static_files/css/'))
+        .pipe(gulp.dest('static/css/' && 'dist/static-files/css/'))
         .pipe(livereload());
 });
+
+
 
 // watch for changes on njk file and sass files
 gulp.task('watch', () => {
@@ -53,9 +55,4 @@ gulp.task('server', () => {
 });
 
 gulp.task('default', ['server', 'watch' ,'sass']);
-
-gulp.task('build', function() {
-  // create static files
-  gulp.start('njk');
-
-});
+gulp.task('build', ['sass', 'njk']);

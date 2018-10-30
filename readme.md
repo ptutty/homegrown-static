@@ -38,7 +38,7 @@ Guides for applying layout, typography, colour and images.
 ### components
 Save time with reusable, accessible components for forms, navigation, panels, tables and more.
 
-### Patterns
+### patterns
 Help users complete common tasks like entering names and addresses, filling in forms and creating accounts.
 
 See the [style guide docs for more details of how to use](docs/style-guide/introduction.md)

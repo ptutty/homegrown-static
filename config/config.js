@@ -1,3 +1,8 @@
+
+const datetime = require('date-and-time');
+let now = new Date();
+var currentdate = datetime.format(now, 'YYYY/MM/DD hh:mm A');
+
 module.exports = {
   paths: {
     public_dir: 'dist',
@@ -9,7 +14,8 @@ module.exports = {
   njk: {
     // Add custom variables to be inserted into the HTML templates
     templateVars: {
-      testing: 'Test Variable.',
+      version : '1.1',
+      publishdate : currentdate
     },
   },
   sass: {
