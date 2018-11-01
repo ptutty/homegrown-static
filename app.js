@@ -16,6 +16,8 @@ nunjucks.configure('views', {
 
 
 // setup some routes
+
+// the homepage route passes a date stamp and version number
 app.get( '/', function( req, res ) {
     return res.render( 'index.njk' , config.njk.templateVars ) ;
 } ) ;
