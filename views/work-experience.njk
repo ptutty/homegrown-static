@@ -1,7 +1,25 @@
 
-{% extends './layouts/layout.njk' %}
 
-{% block content %}
-<h2>Work Experience</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% extends './layouts/components/content.njk' %}
+
+{% block pagetitle %}
+Work experience
+{% endblock %}
+
+{% block main_content %}
+
+<p>My current thinking is to build out all the design components and templates using current website content.
+ Once this is finalised, user tested and approved we can build a style guide<em>docs/style-guide</em> and create sample page in the docs folder.</p>
+
+
+{% endblock %}
+
+
+{% block related_links %}
+
+<ul>
+  <li><a href="guidance-appointment">Basic content page</a></li>
+  <li>Topic page</li>
+  <li>multi-part content page</li>
+</ul>
 {% endblock %}

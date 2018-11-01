@@ -31,7 +31,7 @@ gulp.task('sass', function() {
         .pipe(livereload());
 });
 
-// SASS compiling
+// SASS compiling into dist directory
 gulp.task('sass-dist', function() {
     gulp.src('sass/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
