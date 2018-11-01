@@ -1,5 +1,7 @@
 
 {% extends './layouts/components/content.njk' %}
+{% import './layouts/components/sub-components/button.njk' as buttons %}
+
 
 {% block pagetitle %}
 Careers guidance appointments
@@ -18,6 +20,13 @@ Careers guidance appointments
   <li>Preparing and applying for jobs, further study and work experience</li>
 </ul>
 
+
+{# {{ buttons.basic('Make a booking') }} #}
+{{ buttons.basic({
+  text: "Start now",
+  href: "https://myadvantage.warwick.ac.uk/students/appointments/",
+  classes: "scs-button--start"
+}) }}
 
 {% endblock %}
 
