@@ -1,7 +1,8 @@
 /* dev only styles */
 .versioning {
-  font-size: 14px !important;
-  color: grey !important; }
+  font-size: 12px !important;
+  color: yellow !important;
+  float: right; }
 
 /* typography */
 .scs-content-row {
