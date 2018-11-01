@@ -24,13 +24,20 @@ livereload({ start: true });
 
 // SASS compiling
 gulp.task('sass', function() {
-    gulp.src('sass/**/*.scss')
+    gulp.src('sass/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
         .on('error', sass.logError))
-        .pipe(gulp.dest('static/css/' && 'dist/static-files/css/'))
+        .pipe(gulp.dest('static/css/'))
         .pipe(livereload());
 });
 
+// SASS compiling
+gulp.task('sass-dist', function() {
+    gulp.src('sass/*.scss')
+        .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
+        .on('error', sass.logError))
+        .pipe(gulp.dest('dist/static-files/css/'))
+});
 
 
 // watch for changes on njk file and sass files
@@ -41,8 +48,8 @@ gulp.task('watch', () => {
     gulp.watch('views/**/*.njk').on('change', (file) => {
         livereload.changed(file.path);
     });
-    gulp.watch('sass/**/*.scss', ['sass']);
-    gulp.watch('static/css/*.css');
+    gulp.watch('sass/*.scss', ['sass']);
+
     livereload.listen();
 });
 
@@ -55,4 +62,4 @@ gulp.task('server', () => {
 });
 
 gulp.task('default', ['server', 'watch' ,'sass']);
-gulp.task('build', ['sass', 'njk']);
+gulp.task('build', ['sass-dist', 'njk']);

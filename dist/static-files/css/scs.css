@@ -1,0 +1,20 @@
+/* dev only styles */
+.versioning {
+  font-size: 14px !important;
+  color: grey !important; }
+
+/* over rides */
+.id7-page-title h1 {
+  margin-bottom: 25px !important;
+  font-size: 44px !important;
+  color: black !important;
+  margin-top: 35px !important;
+  border-bottom: 0px solid #ababab !important; }
+
+
+.scs-content h2 {
+  margin-bottom: 25px !important;
+  font-weight: 500;
+  font-size: 27px !important;
+  color: black !important;
+}

@@ -1,0 +1,50 @@
+{% include '../partials/header.njk' %}
+
+    <main class="id7-main-content-area" id="main">
+      <header class="id7-main-content-header">
+        <div class="id7-horizontal-divider">
+          {% include '../components/divider.njk' %}
+        </div>
+
+
+      </header>
+
+      <div class="id7-main-content scs-content-row">
+
+        <div class="row ">
+            <section class="col-sm-8 scs-content">
+
+
+                <h1> {% block pagetitle %}{% endblock %}</h1>
+
+
+        {% block main_content %}
+        {% endblock %}
+
+  </section>
+
+
+  <aside class="col-sm-4">
+    <div class="scs-navigation-related">
+      <h2 class="main-heading">Related content</h2>
+
+      {% block related_links %}
+      {% endblock %}
+    </div>
+
+   <div class="scs-navigation-topics">
+      <h3 class="sub-heading">Explore the topic</h3>
+      {% block related_topics %}
+      {% endblock %}
+  </div>
+
+
+  </aside>
+</div>
+
+
+      </div>
+    </main>
+
+
+{% include '../partials/footer.njk' %}

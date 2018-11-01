@@ -25,7 +25,7 @@ Git bash (Windows)
 2. commit and push to gitHub
 3. view static html at https://warwick-scs.netlify.com
 
-You can read more on [deployment here](docs/publishing-on-netify.md).
+You can read more on [deployment here](publishing-on-netify.md).
 
 
 ## writing code

@@ -1,0 +1,69 @@
+/* dev only styles */
+.versioning {
+  font-size: 14px !important;
+  color: grey !important; }
+
+/* typography */
+.scs-content-row {
+  margin-top: 30px; }
+
+.scs-content {
+  padding-left: 20px !important;
+  padding-right: 25px !important; }
+
+.scs-content h1 {
+  margin-bottom: 10px !important;
+  font-size: 48px !important;
+  color: black !important;
+  line-height: 50px !important;
+  border-bottom: 0px solid #ababab !important;
+  font-weight: 700; }
+
+.scs-content h2 {
+  margin-bottom: 20px !important;
+  font-size: 27px !important;
+  color: black !important;
+  font-weight: 700; }
+
+.scs-content p {
+  font-size: 18px !important;
+  line-height: 25px !important;
+  font-weight: 400 !important; }
+
+.scs-content li {
+  font-size: 18px !important;
+  line-height: 25px !important;
+  font-weight: 400 !important; }
+
+/* right nav box */
+.scs-navigation-related {
+  margin-top: 15px;
+  color: #0b0c0c;
+  border-top: 2px solid black; }
+
+.scs-navigation-related ul, .scs-navigation-topics ul {
+  list-style-type: none !important;
+  margin-bottom: 1.25em;
+  padding-left: 0px !important; }
+
+.scs-navigation-related h2.main-heading {
+  color: black;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 19px;
+  line-height: 1.25;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
+.scs-navigation-topics h3.sub-heading {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.1428571429;
+  margin: 0;
+  color: black;
+  padding-top: 15px;
+  margin-bottom: 10px; }
+
+.scs-navigation-topics {
+  border-top: 1px solid #bfc1c3; }
