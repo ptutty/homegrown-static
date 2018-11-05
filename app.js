@@ -24,13 +24,11 @@ app.get( '/', function( req, res ) {
 
 app.get( '/:page', function( req, res ) {
   let filename = req.params.page.replace(".html", "");
-  return res.render( filename + '.njk' ) ;
+  return res.render( filename + '.njk' , config.njk.templateVars ) ;
 } ) ;
 
 
-app.get( '/advice-and-appointments.html', function( req, res ) {
-    return res.render( 'advice-and-appointments.njk' ) ;
-} ) ;
+
 
 let date = require('date-and-time');
 
