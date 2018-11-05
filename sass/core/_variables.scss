@@ -23,9 +23,10 @@ $headings-font-weight: 700;
 
 // responsive media queries
 
+
 $tablet-width: 641px;
 
-@mixin tablet {
+@mixin tablet { // query for anything bigger than a tablet
   @media (min-width: #{$tablet-width}) {
     @content;
   }

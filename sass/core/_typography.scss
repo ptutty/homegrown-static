@@ -1,0 +1,63 @@
+/* typography */
+
+.scs-content p {
+  font-size: $main-font-size;
+  line-height: 22px;
+  font-weight: $main-font-weight;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+
+.scs-content > h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: black;
+  line-height: 36px;
+  border-bottom: 0px;
+  font-weight: $headings-font-weight;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+}
+
+.scs-content > h2 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: black;
+  font-weight: $headings-font-weight;
+
+  @include tablet {
+      font-size: 27px;
+      line-height: 1.25
+  }
+
+}
+
+.scs-content ul {
+  margin-bottom: 20px
+}
+
+.scs-content li {
+  font-size: $main-font-size;
+  line-height: 25px;
+  margin-bottom: 11px;
+
+  @include tablet {
+        font-size: 18px;
+        line-height: 1.25
+  }
+}
+
+
+.scs-content .info-notice {
+    border-left: 1em solid #dee0e2;
+    padding: 1em 0 1em 1em;
+    margin: 2em 0;
+}

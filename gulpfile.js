@@ -24,7 +24,7 @@ livereload({ start: true });
 
 // SASS compiling
 gulp.task('sass', function() {
-    gulp.src('sass/*.scss')
+    gulp.src('sass/**/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
         .on('error', sass.logError))
         .pipe(gulp.dest('static/css/'))
@@ -33,7 +33,7 @@ gulp.task('sass', function() {
 
 // SASS compiling into dist directory
 gulp.task('sass-dist', function() {
-    gulp.src('sass/*.scss')
+    gulp.src('sass/**/*.scss')
         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
         .on('error', sass.logError))
         .pipe(gulp.dest('dist/static-files/css/'))
@@ -48,7 +48,7 @@ gulp.task('watch', () => {
     gulp.watch('views/**/*.njk').on('change', (file) => {
         livereload.changed(file.path);
     });
-    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('sass/**/*.scss', ['sass']);
 
     livereload.listen();
 });

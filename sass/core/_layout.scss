@@ -3,10 +3,11 @@
 }
 
 .scs-content {
-  padding-left: 20px!important;
-  padding-right: 25px!important;
+  @include tablet {
+    padding-left: 20px!important;
+    padding-right: 25px!important;
+  }
 }
-
 
 /* right nav boxes */
 
@@ -26,9 +27,9 @@
     }
 
     ul {
-      list-style-type: none !important;
+      list-style-type: none ;
       margin-bottom: 1.25em;
-      padding-left: 0px !important;
+      padding-left: 0px;
     }
 
 }
@@ -37,9 +38,9 @@
   border-top: 1px solid #bfc1c3;
 
   ul  {
-   list-style-type: none!important;
+   list-style-type: none;
    margin-bottom: 1.25em;
-   padding-left: 0px!important;
+   padding-left: 0px;
   }
 
   h3 {

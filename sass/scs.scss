@@ -1,62 +1,6 @@
 
 @import "./core/variables";
-@import "./core/typography";
 @import "./core/layout";
+@import "./core/typography";
 @import "./core/components";
-
-
-
-
-/* right nav boxes */
-
-.scs-navigation-related {
-    margin-top: 15px;
-    color: #0b0c0c;
-    border-top: 2px solid black;
-
-    h2 {
-      color: black;
-      font-weight: 700;
-      text-transform: none;
-      font-size: 19px;
-      line-height: 1.25;
-      margin-top: 20px!important;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style-type: none !important;
-      margin-bottom: 1.25em;
-      padding-left: 0px !important;
-    }
-
-}
-
-.scs-navigation-topics {
-  border-top: 1px solid #bfc1c3;
-
-  ul  {
-   list-style-type: none!important;
-   margin-bottom: 1.25em;
-   padding-left: 0px!important;
-  }
-
-  h3 {
-     font-weight: 600;
-     text-transform: none;
-     font-size: 16px;
-     line-height: 1.1428571429;
-     margin: 0;
-     color: black;
-     padding-top: 15px;
-     margin-bottom: 10px;
-   }
-}
-
-
-
-
-
-
-  /* dev only styles */
-  .versioning { font-size: 12px!important; color: yellow!important; float:right}
+@import "./core/helper";
