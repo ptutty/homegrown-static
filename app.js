@@ -7,6 +7,7 @@ const config = require('./config/config');
 // for serving static file such as css and imgs
 app.use('/static-files', express.static('static'));
 
+
 // use nunjucks as the template engine
 nunjucks.configure('views', {
     express: app,
@@ -23,10 +24,21 @@ app.get( '/', function( req, res ) {
 } ) ;
 
 app.get( '/:page', function( req, res ) {
-  let filename = req.params.page.replace(".html", "");
-  return res.render( filename + '.njk' , config.njk.templateVars ) ;
+  let page = req.params.page.replace(".html", "");
+  return res.render( page + '.njk' , config.njk.templateVars ) ;
 } ) ;
 
+app.get( '/:topic/*', function( req, res ) {
+  let topic = req.params.topic;
+  return res.render( topic + '/' + 'index.njk' , config.njk.templateVars ) ;
+} ) ;
+
+
+app.get( '/:topic/:subpage', function( req, res ) {
+  let subpage = req.params.subpage.replace(".html", "");
+  let topic = req.params.topic;
+  return res.render( topic + '/' + subpage + '.njk' , config.njk.templateVars ) ;
+} ) ;
 
 
 

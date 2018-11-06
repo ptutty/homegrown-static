@@ -9,9 +9,10 @@ const config = require('./config/config');
 gulp.task('njk', function() {
   return gulp
     .src(config.paths.views_dir + '/*.@(html|njk)')
+
     .pipe(
       njkRender({
-        path: [config.paths.views_dir],
+        path: config.paths.views_dir,
         data: config.njk.templateVars,
       })
     )

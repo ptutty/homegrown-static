@@ -1,58 +1,10 @@
-/* typography */
-.scs-content p {
-  font-size: 16px !important;
-  line-height: 22px !important;
-  font-weight: 400 !important; }
-  @media (min-width: 641px) {
-    .scs-content p {
-      font-size: 18px !important;
-      line-height: 20px !important; } }
-
-.scs-content h1 {
-  margin-bottom: 30px !important;
-  font-size: 32px !important;
-  color: black !important;
-  line-height: 36px !important;
-  border-bottom: 0px solid #ababab !important;
-  font-weight: 700; }
-  @media (min-width: 641px) {
-    .scs-content h1 {
-      font-size: 48px !important;
-      line-height: 50px !important; } }
-
-.scs-content h2 {
-  margin-bottom: 25px !important;
-  font-size: 18px !important;
-  color: black !important;
-  font-weight: 700; }
-  @media (min-width: 641px) {
-    .scs-content h2 {
-      font-size: 27px !important;
-      line-height: 1.25; } }
-
-.scs-content ul {
-  margin-bottom: 20px; }
-
-.scs-content li {
-  font-size: 16px !important;
-  line-height: 25px !important;
-  margin-bottom: 11px; }
-  @media (min-width: 641px) {
-    .scs-content li {
-      font-size: 18px !important;
-      line-height: 1.25; } }
-
-.scs-content .info-notice {
-  border-left: 1em solid #dee0e2;
-  padding: 1em 0 1em 1em;
-  margin: 2em 0; }
-
 .scs-content-row {
   margin-top: 30px; }
 
-.scs-content {
-  padding-left: 20px !important;
-  padding-right: 25px !important; }
+@media (min-width: 641px) {
+  .scs-content {
+    padding-left: 20px !important;
+    padding-right: 25px !important; } }
 
 /* right nav boxes */
 .scs-navigation-related {
@@ -68,16 +20,16 @@
     margin-top: 20px !important;
     margin-bottom: 10px; }
   .scs-navigation-related ul {
-    list-style-type: none !important;
+    list-style-type: none;
     margin-bottom: 1.25em;
-    padding-left: 0px !important; }
+    padding-left: 0px; }
 
 .scs-navigation-topics {
   border-top: 1px solid #bfc1c3; }
   .scs-navigation-topics ul {
-    list-style-type: none !important;
+    list-style-type: none;
     margin-bottom: 1.25em;
-    padding-left: 0px !important; }
+    padding-left: 0px; }
   .scs-navigation-topics h3 {
     font-weight: 600;
     text-transform: none;
@@ -88,13 +40,62 @@
     padding-top: 15px;
     margin-bottom: 10px; }
 
+/* typography */
+.scs-content p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400; }
+  @media (min-width: 641px) {
+    .scs-content p {
+      font-size: 18px;
+      line-height: 20px; } }
+
+.scs-content > h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: black;
+  line-height: 36px;
+  border-bottom: 0px;
+  font-weight: 700; }
+  @media (min-width: 641px) {
+    .scs-content > h1 {
+      font-size: 48px;
+      line-height: 50px; } }
+
+.scs-content > h2 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: black;
+  font-weight: 700; }
+  @media (min-width: 641px) {
+    .scs-content > h2 {
+      font-size: 27px;
+      line-height: 1.25; } }
+
+.scs-content ul {
+  margin-bottom: 20px; }
+
+.scs-content li {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 11px; }
+  @media (min-width: 641px) {
+    .scs-content li {
+      font-size: 18px;
+      line-height: 1.25; } }
+
+.scs-content .info-notice {
+  border-left: 1em solid #dee0e2;
+  padding: 1em 0 1em 1em;
+  margin: 2em 0; }
+
 /* buttons */
 .scs-button {
   text-decoration: none !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 16px !important;
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.1875;
   -webkit-box-sizing: border-box;
@@ -119,9 +120,9 @@
   .scs-button:focus {
     background-color: #00b2dd; }
 
-.scs-button--start {
-  font-weight: 700 !important;
-  font-size: 22px !important;
+.scs-button--booking {
+  font-weight: 700;
+  font-size: 22px;
   line-height: 1;
   min-height: auto;
   padding-top: 8px;
@@ -131,40 +132,6 @@
   background-image: url("../images/icon-pointer.png");
   background-repeat: no-repeat;
   background-position: 100% 50%; }
-
-/* right nav boxes */
-.scs-navigation-related {
-  margin-top: 15px;
-  color: #0b0c0c;
-  border-top: 2px solid black; }
-  .scs-navigation-related h2 {
-    color: black;
-    font-weight: 700;
-    text-transform: none;
-    font-size: 19px;
-    line-height: 1.25;
-    margin-top: 20px !important;
-    margin-bottom: 10px; }
-  .scs-navigation-related ul {
-    list-style-type: none !important;
-    margin-bottom: 1.25em;
-    padding-left: 0px !important; }
-
-.scs-navigation-topics {
-  border-top: 1px solid #bfc1c3; }
-  .scs-navigation-topics ul {
-    list-style-type: none !important;
-    margin-bottom: 1.25em;
-    padding-left: 0px !important; }
-  .scs-navigation-topics h3 {
-    font-weight: 600;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 1.1428571429;
-    margin: 0;
-    color: black;
-    padding-top: 15px;
-    margin-bottom: 10px; }
 
 /* dev only styles */
 .versioning {
