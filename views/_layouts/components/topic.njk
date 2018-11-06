@@ -1,0 +1,50 @@
+{% include '../partials/header.njk' %}
+
+    <main class="id7-main-content-area" id="main">
+      <header class="id7-main-content-header"></header>
+
+      <div class="id7-main-content scs-content-row scs-topic">
+
+
+    <div class="row ">
+          <div class="col-sm-1"> </div>
+          <div class="col-sm-7 ">
+            <h3>Topic</h3>
+        <h1> {% block topic_title %}{% endblock %}</h1>
+      </div>
+
+    </div>
+
+        <div class="row ">
+            <section class="col-sm-1 scs-vert-divider">
+              <h5 class="scs-topic-atoz">AtoZ</h5>
+            </section>
+
+            <section class="col-sm-7 ">
+
+            <div class="scs-topicpage-pane-inner" >
+            {% block main_content %}
+            {% endblock %}
+            </div>
+
+  </section>
+
+
+  <aside class="col-sm-4">
+    <div class="scs-navigation-related">
+      <h2>Related topics</h2>
+
+      {% block related_links %}
+      {% endblock %}
+    </div>
+
+
+  </aside>
+</div>
+
+
+      </div>
+    </main>
+
+
+{% include '../partials/footer.njk' %}
