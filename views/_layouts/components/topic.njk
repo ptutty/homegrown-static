@@ -9,22 +9,28 @@
     <div class="row ">
           <div class="col-sm-1"> </div>
           <div class="col-sm-7 ">
-            <h3>Topic</h3>
-        <h1> {% block topic_title %}{% endblock %}</h1>
-      </div>
+
+            <div class="topic-header">
+              <h3>Topic</h3>
+              <h1> {% block topic_title %}{% endblock %}</h1>
+            </div>
+
+          </div>
 
     </div>
 
         <div class="row ">
-            <section class="col-sm-1 scs-vert-divider">
+            <section class="col-sm-1">
               <h5 class="scs-topic-atoz">AtoZ</h5>
             </section>
 
             <section class="col-sm-7 ">
 
-            <div class="scs-topicpage-pane-inner" >
-            {% block main_content %}
-            {% endblock %}
+            <div class="scs-section-pane">  
+              <div class="scs-pane-inner" >
+              {% block main_content %}
+              {% endblock %}
+              </div>
             </div>
 
   </section>
