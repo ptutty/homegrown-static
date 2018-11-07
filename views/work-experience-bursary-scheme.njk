@@ -1,17 +1,21 @@
 
 {% extends './_layouts/components/content.njk' %}
-{% set content_toc = "true" %}
+{% set content_guide = "true" %}
 
 {% block pagetitle %}
 Work experience bursary scheme (WEB)
 {% endblock %}
 
-{% block content_toc %}
-<ul>
-  <li>About the scheme </li>
-  <li>How to apply</li>
-  <li>Further information and support</li>
-</ul>
+{% block content_guide %}
+
+<ol class="scs-contents-list__list">
+    <li class="scs-contents-list__list-item scs-contents-list__list-item--dashed scs-contents-list__list-item--active" aria-current="true">
+      About the scheme
+    </li>
+    <li class="scs-contents-list__list-item scs-contents-list__list-item--dashed ">
+          <a class="scs-c-contents-list__link " href="/employer-reporting-expenses-benefits/reporting-and-paying">How to apply</a>
+        </li>
+</ol>
 {% endblock %}
 
 
