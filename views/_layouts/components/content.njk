@@ -10,6 +10,14 @@
 
                 <h1> {% block pagetitle %}{% endblock %}</h1>
 
+                <!-- conditonal block for content TOC -->
+                {% if content_toc %}
+                  <div class="scs-content-toc">
+                  <h6>Contents</h6>
+                    {% block content_toc %}
+                    {% endblock %}
+                  </div>
+                {% endif %}
 
         {% block main_content %}
         {% endblock %}
