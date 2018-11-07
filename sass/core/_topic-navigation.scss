@@ -59,7 +59,38 @@
   }
 }
 
+.scs-topic {
+  p {
+    font-size: $main-font-size;
+    line-height: 22px;
+    font-weight: $main-font-weight;
 
+    @include tablet {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  h1 {
+    margin-top: 0px;
+    font-size: 26px;
+    color: black;
+    line-height: 26px;
+    border-bottom: 0px;
+    font-weight: $headings-font-weight;
+
+    @include tablet {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+
+  h3 {
+   font-size: 19px;
+   color: #bbb;
+   margin-bottom: 0px;
+  }
+}
 
 h5.scs-topic-atoz {
   font-size: 20px;
