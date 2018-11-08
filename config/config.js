@@ -7,7 +7,7 @@ module.exports = {
   paths: {
     public_dir: 'dist',
     assets_dir: 'static',
-    views_dir: 'views',
+    views_dir: 'pages',
     vendor_dir: 'vendor',
     resources_dir: 'resources',
   },
