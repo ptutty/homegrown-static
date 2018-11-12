@@ -6,6 +6,7 @@ var currentdate = datetime.format(now, 'YYYY/MM/DD hh:mm A');
 module.exports = {
   paths: {
     public_dir: 'dist',
+    public_assets_dir: 'static-files',
     assets_dir: 'static',
     views_dir: 'pages',
     vendor_dir: 'vendor',

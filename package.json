@@ -23,6 +23,7 @@
   "dependencies": {
     "date-and-time": "^0.6.3",
     "filehound": "^1.16.4",
+    "fs-extra": "^7.0.1",
     "ls-async": "^3.2.1"
   }
 }
