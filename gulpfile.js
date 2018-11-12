@@ -18,15 +18,6 @@ gulp.task('sass', function() {
         .pipe(livereload());
 });
 
-// SASS compiling into dist directory
-// gulp.task('sass-dist', function() {
-//     gulp.src('sass/**/*.scss')
-//         .pipe(sass({indentedSyntax : false, includePaths: ['sass']})
-//         .on('error', sass.logError))
-//         .pipe(gulp.dest('dist/static-files/css/'))
-// });
-
-
 // watch for changes on njk file and sass files
 gulp.task('watch', () => {
     gulp.watch('views/**/*.html').on('change', (file) => {
@@ -53,5 +44,3 @@ gulp.task('default', ['server', 'watch' ,'sass']);
 gulp.task('build', function() {
   buildpublic.build();
 });
-
-// gulp.task('build', ['sass-dist', 'njk']);

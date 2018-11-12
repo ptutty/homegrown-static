@@ -1,5 +1,6 @@
 
 {% extends 'content.njk' %}
+{% import 'components/guide.njk' as guide %}
 {% set content_guide = "true" %}
 
 {% block pagetitle %}
@@ -12,9 +13,14 @@ Work experience bursary scheme (WEB)
     <li class="scs-contents-list__list-item scs-contents-list__list-item--dashed scs-contents-list__list-item--active" aria-current="true">
       About the scheme
     </li>
+
+    <li class="scs-contents-list__list-item scs-contents-list__list-item--dashed" >
+      <a class="scs-c-contents-list__link " href="work-experience-bursary-scheme-p2.html" >Who can apply? </a>
+    </li>
+
     <li class="scs-contents-list__list-item scs-contents-list__list-item--dashed ">
-          <a class="scs-c-contents-list__link " href="/employer-reporting-expenses-benefits/reporting-and-paying">How to apply</a>
-        </li>
+          <a class="scs-c-contents-list__link " href="work-experience-bursary-scheme-p3.html" >How to apply</a>
+    </li>
 </ol>
 {% endblock %}
 
@@ -42,15 +48,18 @@ Work experience bursary scheme (WEB)
 	</ul>
 
 
-<h3>When should I apply?</h3>
 
+<!-- next pagination -->
 
-
-<p>You must apply at least 1 week prior to the start of your work experience in order to receive a decision in time. Late applications will only be considered at the discretion of the Internships Development Manager. Applications submitted after the work experience has started, or been completed, will not be considered.</p>
+{{ guide.pagination_next({
+  text: "Who can apply?",
+  href: "work-experience-bursary-scheme-p2.html"
+}) }}
 
 
 
 {% endblock %}
+
 
 {% block related_links %}
 

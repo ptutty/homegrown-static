@@ -1,8 +1,12 @@
 .scs-content-row {
   margin-top: 30px;
+    a {
+      color: $scs-link-blue;
+    }
 }
 
 .scs-content {
+
   @include tablet {
     padding-left: 20px!important;
     padding-right: 25px!important;
@@ -32,19 +36,28 @@
       padding-left: 0px;
     }
 
+    a {
+      color: $scs-link-blue!important;
+    }
+
 }
 
 .scs-navigation-topics {
   border-top: 1px solid #bfc1c3;
 
+  a {
+    color: $scs-link-blue!important;
+  }
+
   ul  {
    list-style-type: none;
    margin-bottom: 1.25em;
    padding-left: 0px;
+   font-weight: 600;
   }
 
   h3 {
-     font-weight: 600;
+     font-weight: 400;
      text-transform: none;
      font-size: 16px;
      line-height: 1.1428571429;
