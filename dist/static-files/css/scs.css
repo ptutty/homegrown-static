@@ -1,5 +1,8 @@
+@charset "UTF-8";
 .scs-content-row {
   margin-top: 30px; }
+  .scs-content-row a {
+    color: #005ea5; }
 
 @media (min-width: 641px) {
   .scs-content {
@@ -23,15 +26,20 @@
     list-style-type: none;
     margin-bottom: 1.25em;
     padding-left: 0px; }
+  .scs-navigation-related a {
+    color: #005ea5 !important; }
 
 .scs-navigation-topics {
   border-top: 1px solid #bfc1c3; }
+  .scs-navigation-topics a {
+    color: #005ea5 !important; }
   .scs-navigation-topics ul {
     list-style-type: none;
     margin-bottom: 1.25em;
-    padding-left: 0px; }
+    padding-left: 0px;
+    font-weight: 600; }
   .scs-navigation-topics h3 {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: none;
     font-size: 16px;
     line-height: 1.1428571429;
@@ -231,7 +239,8 @@ h5.scs-topic-atoz {
   padding-bottom: 15px;
   border-bottom: 1px solid #bfc1c3; }
   .guide .part-navigation-container h2 {
-    margin: 0px; }
+    margin: 0px 0px 10px 0px;
+    font-weight: 600 !important; }
 
 @media (min-width: 641px) {
   .guide .part-navigation-container {
@@ -414,7 +423,7 @@ h5.scs-topic-atoz {
   padding-right: 25px; }
 
 .scs-contents-list__list-item--dashed:before {
-  content: ">";
+  content: "— ";
   margin-left: -25px;
   padding-right: 5px; }
 
@@ -427,6 +436,113 @@ h5.scs-topic-atoz {
 .lte-ie8 .scs-contents-list__list-item--dashed .scs-contents-list__link {
   display: inline-block;
   vertical-align: top; }
+
+.scs-guide-pagination {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .scs-guide-pagination a {
+    color: #005ea5 !important; }
+  .scs-guide-pagination ul {
+    padding-left: 1px;
+    margin-left: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.scs-guide-pagination__list {
+  margin: 0;
+  padding: 0; }
+
+.scs-guide-pagination__item {
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  list-style: none; }
+
+@media (min-width: 641px) {
+  .scs-guide-pagination__item {
+    font-size: 16px !important;
+    line-height: 1.25 !important; } }
+
+.scs-guide-pagination__link {
+  display: block;
+  padding: 15px;
+  text-decoration: none !important; }
+
+.scs-guide-pagination__link:hover,
+.scs-guide-pagination__link:active,
+.scs-guide-pagination__link:visited,
+.scs-guide-pagination__link:focus {
+  color: #005ea5; }
+
+.scs-guide-pagination__link:hover,
+.scs-guide-pagination__link:active {
+  background-color: #f8f8f8; }
+
+.scs-guide-pagination__link-title {
+  display: block; }
+
+.scs-guide-pagination__link-divider {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important; }
+
+.scs-guide-pagination__link-text {
+  font-weight: 700;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-left: 10px; }
+
+@media (min-width: 641px) {
+  .scs-guide-pagination__link-text {
+    font-size: 19px;
+    line-height: 1.3157894737; } }
+
+.scs-guide-pagination__link-icon {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 1px;
+  height: .482em;
+  width: .63em; }
+
+@media (min-width: 641px) {
+  .scs-guide-pagination__link-icon {
+    font-size: 24px;
+    line-height: 1.25; } }
+
+.scs-guide-pagination__link-label {
+  display: inline-block;
+  margin-top: 0.1em;
+  text-decoration: underline;
+  margin-left: 30px; }
+
+@media (max-width: 640px) {
+  .scs-guide-pagination__link-label {
+    margin-left: 24px; } }
+
+.visually-hidden, .visuallyhidden {
+  position: absolute !important;
+  left: -9999em;
+  top: auto;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important; }
 
 /* dev only styles */
 .versioning {
