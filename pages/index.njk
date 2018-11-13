@@ -1,25 +1,32 @@
 
-{% extends 'content.njk' %}
+{% extends 'homepage.njk' %}
 
-{% block pagetitle %}
-Student Careers<br>
-prototype
-{% endblock %}
 
 {% block main_content %}
 
-<p>My current thinking is to build out all the design components and templates using current website content.
- Once this is finalised, user tested and approved we can build a style guide<em>docs/style-guide</em> and create sample page in the docs folder.</p>
+<div class="row">
+  <div class="col-sm-8"><a class="white" href="eat-drink/"><img src="/static-files/images/scs-banner-short.png" alt="Drink being made in coffee machine" title="Food and drink available across campus" border="0"></a>
+    <h2 class="scs-homepage-title">We help you prepare<br><span class="heavy">for your future</span></h2>
+      <section class="box-dark boxstyle_">
+      <p>Whether you are an undergrad, postgrad or postdoc, our team of experienced and impartial careers advisers are here to support you at Warwick and beyond</p>
+
+    </section>
+  </div>
+
+  <div class="col-sm-4 scs-homepage-main-menu">
+    <h2>I'm looking to...</h2>
+
+    <h3><a class="menu" href="#">Explore my future options </a></h3>
+
+    <h3><a class="menu " href="#">Be more employable </a></h3>
+
+    <h3><a class="menu" href="#">Find a Job </a></h3>
+
+    <h3><a class="menu " href="#">Get help with job applications</a></h3>
+
+  </div>
+
+</div>
 
 
-{% endblock %}
-
-
-{% block related_links %}
-
-<ul>
-  <li><a href="guidance-appointment.html">Basic content page</a></li>
-  <li>Topic page</li>
-  <li>multi-part content page</li>
-</ul>
 {% endblock %}
