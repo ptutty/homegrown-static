@@ -4,7 +4,7 @@ const Filehound = require('filehound');
 const config = require('../config/config');
 const fs = require('fs-extra')
 
-
+// remove public
 function deletePublic(){
   fs.remove(config.paths.public_dir)
   .then(() => {
@@ -16,6 +16,7 @@ function deletePublic(){
   })
 }
 
+// create public
 function createPublic() {
   fs.ensureDir(config.paths.public_dir)
   .then(() => {
@@ -47,19 +48,22 @@ function renderToPublic() {
     .directory()
     .find()
     .then((subdirectories) => {
+      console.log(subdirectories);
       dist_directories = subdirectories;
       dist_directories.push(config.paths.public_dir);
       let arrayLength = dist_directories.length;
 
       for (var i = 0; i < arrayLength; i++) {
-        var shortDir = dist_directories[i].split('/')[1];
+        var shortDir = dist_directories[i].split('pages/')[1];
         if (shortDir !== undefined ) {
           var srcdirectory = dist_directories[i] + '/*.@(html|njk)';
-          var destdirectory = config.paths.public_dir + '/' + dist_directories[i].split('/')[1];
+          var destdirectory = config.paths.public_dir + '/' + shortDir;
         } else {
           var srcdirectory = config.paths.views_dir + '/*.@(html|njk)';
           var destdirectory = config.paths.public_dir;
         }
+
+
         gulp.src(srcdirectory)
         .pipe(
             njkRender({
@@ -69,7 +73,10 @@ function renderToPublic() {
           )
           .pipe(gulp.dest(destdirectory));
       }
+
     });
+
+
 }
 
 

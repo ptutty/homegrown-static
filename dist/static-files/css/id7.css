@@ -8694,6 +8694,7 @@ body {
   .id7-left-border {
     background-repeat: no-repeat;
     background-position: right top;
+    background-image:url("/static-files/images/lhsborder-greyshafts.jpg")
   }
   .bordered .id7-left-border {
     border-right: 1px solid #808080;
@@ -8701,6 +8702,7 @@ body {
   .id7-right-border {
     background-repeat: no-repeat;
     background-position: left top;
+     background-image:url("/static-files/images/rhsborder-greyshafts.jpg")
   }
   .bordered .id7-right-border {
     border-left: 1px solid #808080;
