@@ -42,12 +42,13 @@
 
 /* right nav boxes */
 .divider--thick {
-  border-top: 1px solid #ef4050; }
+  border-top: 2px solid #aaa; }
 
 .divider--thin {
   border-top: 1px solid #eee; }
 
 .scs-navigation-side-menu {
+  margin-top: 15px;
   padding: 20px 0px 10px 0px; }
   .scs-navigation-side-menu a {
     font-size: 18px;
@@ -249,18 +250,17 @@ h5.scs-topic-atoz {
     margin-bottom: 0px; }
 
 .guide .part-navigation-container {
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding-bottom: 15px; }
   .guide .part-navigation-container h2 {
     margin: 0px 0px 10px 0px;
     font-weight: 600 !important; }
 
-.divider--thin-guide {
-  border-top: 1px solid #eee;
-  padding-bottom: 5px; }
-
 @media (min-width: 641px) {
   .guide .part-navigation-container {
-    margin-top: 0; } }
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 15px; } }
 
 .guide .part-navigation {
   margin-bottom: 0;

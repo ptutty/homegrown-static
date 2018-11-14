@@ -1,8 +1,5 @@
 .guide .part-navigation-container {
     margin-top: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
 
     h2 {
       margin: 0px 0px 10px 0px;
@@ -10,11 +7,14 @@
     }
 }
 
+.divider--thin-guide {
+  border-top: 1px solid $scs-divider-grey;
+  padding-bottom: 5px;
+}
+
 @media (min-width: 641px) {
     .guide .part-navigation-container {
         margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 15px
     }
 }
 
@@ -57,7 +57,8 @@
 }
 
 .guide .part-navigation li a {
-    display: block
+    display: block;
+    border-bottom: 1px solid #dcdcdc;
 }
 
 .guide .part-title {
@@ -164,24 +165,14 @@
     }
 }
 
-@media print {
-    .scs-contents-list__list,
-    .scs-contents-list__nested-list {
-        font-size: 14pt;
-        line-height: 1.2
-    }
-}
+
 
 .scs-contents-list__link {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
 
-@media print {
-    .scs-contents-list__link {
-        font-family: sans-serif
-    }
-}
+
 
 .scs-contents-list__link:focus {
     outline: 3px solid #ffbf47;
@@ -202,7 +193,8 @@
 }
 
 .scs-contents-list__link:active {
-    color: #2b8cc4
+    color: #2b8cc4;
+    font-weight: 600;
 }
 
 .scs-contents-list__link:focus {
@@ -260,7 +252,7 @@
 }
 
 
-// content guide pagination
+// content guide pagination bottom of page
 
 .scs-guide-pagination {
     display: block;
@@ -270,7 +262,7 @@
     margin-right: -15px;
 
     a {
-      color: $scs-link-red;
+      border-bottom: 1px solid #dcdcdc;
     }
 
     ul {
@@ -318,7 +310,8 @@
 
   .scs-guide-pagination__link:hover,
   .scs-guide-pagination__link:active {
-      background-color: #f8f8f8
+      background-color: #f8f8f8;
+      color: red;
   }
 
   .scs-guide-pagination__link-title {

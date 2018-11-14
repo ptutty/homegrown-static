@@ -26,15 +26,14 @@
     }
 
     h3  {
-      font-size: 17px!important;
-      color: $scs-link-red!important;
+      font-size: 20px;
       font-weight: 700;
-      margin-bottom: 5px
+      margin-bottom: 5px;
+      color: black;
     }
 
     a {
       padding: 12px 30px 8px 15px;
-      font-weight: 400;
       text-transform: none;
       font-size: 16px;
       line-height: 1.1428571429;
@@ -84,12 +83,6 @@
       line-height: 50px;
     }
   }
-
-  h3 {
-   font-size: 19px;
-   color: #bbb;
-   margin-bottom: 0px;
-  }
 }
 
 h5.scs-topic-atoz {
@@ -102,5 +95,10 @@ h5.scs-topic-atoz {
 
 .topic-header {
     margin-bottom: 30px;
-    margin-left: 20px
+    margin-left: 20px;
+
+    h3  {
+        color: #ccc;
+        margin-bottom: 0px
+    }
 }

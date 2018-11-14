@@ -1,4 +1,5 @@
 
+// ID7 template over-rides
 
 .id7-navigation .navbar-primary {
     background-color: #ef4050!important;
@@ -16,21 +17,43 @@
     transition: background-color .15s linear,color .15s linear!important;
 }
 
+.id7-utility-masthead {
+    background-color: #3e4146!important;
+}
+
+.id7-page-footer .id7-app-footer {
+    background: #ef4050!important;
+    color: white;
+}
+
+// SCS specific
 
 .scs-content-row {
-  margin-top: 30px;
-  a {
-    color: $scs-link-red;
-    &:visited {
-      color: $scs-link-red;
-      text-decoration-color: $scs-link-red!important;
-    }
 
-    &:link {
-      color: $scs-link-red;
-      text-decoration-color: $scs-link-red!important;
+    margin-top: 30px;
+
+    a {
+      text-decoration: none;
+
+      &:visited {
+        color: #222;
+        text-decoration: none;
+      }
+
+      &:link {
+        color: #222;
+        text-decoration: none;
+      }
+
+      &:visited  {
+      color: #686868;
+      }
+
+      &:hover {
+      color: #1167a8;
+      }
+
     }
-  }
 }
 
 .scs-content {
@@ -41,52 +64,36 @@
 }
 
 /* right nav boxes */
+.divider--thick {
+  border-top: 1px solid $scs-link-red;
+}
 
-.scs-navigation-related {
-    margin-top: 15px;
-    border-top: 2px solid black;
-    text-decoration-color: $scs-link-red!important;
+.divider--thin {
+  border-top: 1px solid $scs-divider-grey;
+}
+
+.scs-navigation-side-menu {
+    padding: 20px 0px 10px 0px;
+
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #222;
+      border-bottom: 1px solid #dcdcdc;
+      text-decoration: none;
+    }
 
     h2 {
-      color: black;
-      font-weight: 700;
+      color: #404040;
+      font-weight: 600;
       text-transform: none;
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1.25;
-      margin-top: 20px!important;
       margin-bottom: 10px;
     }
 
     ul {
       list-style-type: none;
-      margin-bottom: 1.25em;
       padding-left: 0px;
     }
-}
-
-.scs-navigation-topics {
-  border-top: 1px solid #bfc1c3;
-
-  a {
-    color: $scs-link-red;
-    text-decoration-color: $scs-link-red;
-  }
-
-  ul  {
-   list-style-type: none;
-   margin-bottom: 1.25em;
-   padding-left: 0px;
-   font-weight: 600;
-  }
-
-  h3 {
-     font-weight: 400;
-     text-transform: none;
-     font-size: 16px;
-     line-height: 1.1428571429;
-     margin: 0;
-     color: black;
-     padding-top: 15px;
-     margin-bottom: 10px;
-   }
 }

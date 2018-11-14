@@ -11,11 +11,31 @@
                 <h1> {% block pagetitle %}{% endblock %}</h1>
 
 
-        {% block main_content %}
-        {% endblock %}
+                 <div class="guide scs-content ">
+                   <aside class="part-navigation-container" role="complementary">
+                             <nav role="navigation" class="scs-contents-list  "  aria-label="Pages in this guide">
+                         <h2 class="scs-contents-list__title">Contents</h2>
+                         {% block content_guide %}
+                         {% endblock %}
+                     </nav>
+                   </aside>
+                 </div>
 
-  </section>
+</section>
 
+<aside class="col-sm-4">
+</aside>
+
+
+<section class="col-sm-8 scs-content ">
+
+  <div class="divider--thin-guide">  </div>
+    {% block main_content %}
+    {% endblock %}
+
+
+
+</section>
 
   <aside class="col-sm-4">
     <div class="scs-navigation-side-menu divider--thick">
