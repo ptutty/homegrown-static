@@ -17,6 +17,12 @@
   margin-top: 30px; }
   .scs-content-row a {
     color: #ef4050; }
+    .scs-content-row a:visited {
+      color: #ef4050;
+      text-decoration-color: #ef4050 !important; }
+    .scs-content-row a:link {
+      color: #ef4050;
+      text-decoration-color: #ef4050 !important; }
 
 @media (min-width: 641px) {
   .scs-content {
@@ -26,8 +32,8 @@
 /* right nav boxes */
 .scs-navigation-related {
   margin-top: 15px;
-  color: #0b0c0c;
-  border-top: 2px solid black; }
+  border-top: 2px solid black;
+  text-decoration-color: #ef4050 !important; }
   .scs-navigation-related h2 {
     color: black;
     font-weight: 700;
@@ -40,13 +46,12 @@
     list-style-type: none;
     margin-bottom: 1.25em;
     padding-left: 0px; }
-  .scs-navigation-related a {
-    color: #ef4050 !important; }
 
 .scs-navigation-topics {
   border-top: 1px solid #bfc1c3; }
   .scs-navigation-topics a {
-    color: #ef4050 !important; }
+    color: #ef4050;
+    text-decoration-color: #ef4050; }
   .scs-navigation-topics ul {
     list-style-type: none;
     margin-bottom: 1.25em;
@@ -458,7 +463,7 @@ h5.scs-topic-atoz {
   margin-left: -15px;
   margin-right: -15px; }
   .scs-guide-pagination a {
-    color: #005ea5 !important; }
+    color: #ef4050; }
   .scs-guide-pagination ul {
     padding-left: 1px;
     margin-left: 1px;
@@ -599,9 +604,18 @@ h5.scs-topic-atoz {
   opacity: 0.6;
   transition: 0.3s; }
 
+.scs-homepage .scs-homepage-section-divider {
+  margin: 20px 0px 0px 0px;
+  border-bottom: 1px solid #eee; }
+  .scs-homepage .scs-homepage-section-divider h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 0px; }
+
 .scs-homepage .scs-homepage-mega-links {
   color: #383838;
-  margin: 30px 0px 30px 0px; }
+  margin: 0px 0px 30px 0px; }
   .scs-homepage .scs-homepage-mega-links h2 {
     color: #666666; }
   .scs-homepage .scs-homepage-mega-links h3 {
@@ -610,8 +624,8 @@ h5.scs-topic-atoz {
     .scs-homepage .scs-homepage-mega-links h3 a {
       text-decoration: none;
       color: #ef4050;
-      font-size: 19px;
-      font-weight: 600; }
+      font-size: 18px;
+      font-weight: 500; }
   .scs-homepage .scs-homepage-mega-links p {
     line-height: 18px;
     font-size: 16px; }

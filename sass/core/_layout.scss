@@ -19,13 +19,21 @@
 
 .scs-content-row {
   margin-top: 30px;
-    a {
-      color: $scs-link-blue;
+  a {
+    color: $scs-link-red;
+    &:visited {
+      color: $scs-link-red;
+      text-decoration-color: $scs-link-red!important;
     }
+
+    &:link {
+      color: $scs-link-red;
+      text-decoration-color: $scs-link-red!important;
+    }
+  }
 }
 
 .scs-content {
-
   @include tablet {
     padding-left: 20px!important;
     padding-right: 25px!important;
@@ -36,8 +44,8 @@
 
 .scs-navigation-related {
     margin-top: 15px;
-    color: #0b0c0c;
     border-top: 2px solid black;
+    text-decoration-color: $scs-link-red!important;
 
     h2 {
       color: black;
@@ -50,22 +58,18 @@
     }
 
     ul {
-      list-style-type: none ;
+      list-style-type: none;
       margin-bottom: 1.25em;
       padding-left: 0px;
     }
-
-    a {
-      color: $scs-link-blue!important;
-    }
-
 }
 
 .scs-navigation-topics {
   border-top: 1px solid #bfc1c3;
 
   a {
-    color: $scs-link-blue!important;
+    color: $scs-link-red;
+    text-decoration-color: $scs-link-red;
   }
 
   ul  {
