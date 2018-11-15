@@ -1,40 +1,34 @@
 {% include 'partials/header.njk' %}
 
-    <main class="id7-main-content-area" id="main">
-      <header class="id7-main-content-header"></header>
+<main class="id7-main-content-area" id="main">
+  <header class="id7-main-content-header"></header>
 
-      <div class="id7-main-content scs-content-row">
+  <div class="id7-main-content ">
 
-        <div class="row ">
-            <section class="col-sm-8 scs-content">
+  <div class="row scs-content scs-content-pad-top-30">
+      <section class="col-sm-8 scs-content-block-pad">
 
-                <h1> {% block pagetitle %}{% endblock %}</h1>
+          <h1> {% block pagetitle %}{% endblock %}</h1>
 
+           <aside class="part-navigation-container" role="complementary">
 
-                 <div class="guide scs-content ">
-                   <aside class="part-navigation-container" role="complementary">
-                             <nav role="navigation" class="scs-contents-list  "  aria-label="Pages in this guide">
-                         <h2 class="scs-contents-list__title">Contents</h2>
-                         {% block content_guide %}
-                         {% endblock %}
-                     </nav>
-                   </aside>
-                 </div>
+              <nav role="navigation" aria-label="Pages in this guide">
 
+                 <h2>Contents</h2>
+                 {% block content_guide %}
+                 {% endblock %}
+             </nav>
+
+           </aside>
 </section>
 
 <aside class="col-sm-4">
 </aside>
 
 
-<section class="col-sm-8 scs-content ">
-
-  <div class="divider--thin-guide">  </div>
+<section class="col-sm-8 scs-content-main-block scs-content-block-pad scs-content-pad-top-20">
     {% block main_content %}
     {% endblock %}
-
-
-
 </section>
 
   <aside class="col-sm-4">
@@ -44,8 +38,8 @@
       {% endblock %}
     </div>
 
-   <div class="scs-navigation-side-menu divider--thin">
-      <h2 class="sub-heading">Explore the topic</h2>
+   <div class="scs-navigation-side-menu scs-navigation-side-menu-topic divider--thin">
+      <h3 class="sub-heading">Explore the topic</h3>
       {% block related_topics %}
       {% endblock %}
   </div>

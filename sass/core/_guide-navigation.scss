@@ -1,258 +1,54 @@
-.guide .part-navigation-container {
+
+// table of contents for guide nav.
+
+.part-navigation-container {
     margin-top: 30px;
+    border-bottom: 1px solid $scs-colour-light-grey;
+    padding-bottom: 15px;
 
     h2 {
       margin: 0px 0px 10px 0px;
-      font-weight: 600!important
+      font-weight: 400;
+      font-size: 16px;
     }
-}
 
-.divider--thin-guide {
-  border-top: 1px solid $scs-divider-grey;
-  padding-bottom: 5px;
-}
-
-@media (min-width: 641px) {
-    .guide .part-navigation-container {
-        margin-top: 0;
-    }
-}
-
-.guide .part-navigation {
-    margin-bottom: 0;
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 1.25
-}
-
-@media (min-width: 641px) {
-    .guide .part-navigation {
-        font-size: 19px;
-        line-height: 1.3157894737
-    }
-}
-
-@media (min-width: 641px) {
-    .guide .part-navigation {
-        font-family: "nta", Arial, sans-serif;
+    .scs-contents-list__list {
+        color: #0b0c0c;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         font-weight: 400;
-        text-transform: none;
-        font-size: 14px;
-        line-height: 1.1428571429
-    }
-}
-
-@media (min-width: 641px) and (min-width: 641px) {
-    .guide .part-navigation {
         font-size: 16px;
-        line-height: 1.25
+        margin: 0px 0px 20px 0px;
+        padding: 0;
+        list-style-type: none;
+
+        .scs-contents-list__list-item-active {
+          font-weight: 700;
+        }
+
+        .scs-contents-list__list-item {
+            padding-top: 0px;
+            line-height: 1.3;
+            list-style-type: none;
+            font-size: 16px;
+            margin-left: 25px;
+            padding-right: 25px;
+
+        }
+
+        .scs-contents-list__list-item:before {
+          content: "— ";
+          margin-left: -25px;
+          padding-right: 5px;
+        }
     }
-}
 
-.guide .part-navigation li {
-    list-style: none;
-    margin-bottom: 0.75em
-}
 
-.guide .part-navigation li a {
-    display: block;
-    border-bottom: 1px solid #dcdcdc;
-}
-
-.guide .part-title {
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 700;
-    text-transform: none;
-    font-size: 20px;
-    line-height: 1.1111111111;
-    margin-bottom: 15px;
-    margin-top: 15px
-}
-
-@media (min-width: 641px) {
-    .guide .part-title {
-        font-size: 27px;
-        line-height: 1.1111111111
-    }
-}
-
-@media (min-width: 641px) {
-    .guide .part-title {
-        margin-bottom: 20px;
-        margin-top: 20px
-    }
-}
-
-.scs-contents-list {
-    position: relative;
-    margin: 0 0 20px 0;
-    z-index: 1;
-    background: #fff;
-    box-shadow: 0 20px 15px -10px #fff
-}
-
-.scs-contents-list__title {
-    color: #0b0c0c;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400!important;;
-    font-size: 14px!important;;
-    line-height: 1.5;
-    margin: 0
-}
-
-@media print {
-    .scs-contents-list__title {
-        color: #000000
-    }
-}
-
-@media print {
-    .scs-contents-list__title {
-        font-family: sans-serif
-    }
-}
-
-@media (min-width: 40.0625em) {
-    .scs-contents-list__title {
-        font-size: 16px!important;
-        line-height: 1.5
-    }
-}
-
-@media print {
-    .scs-contents-list__title {
-        font-size: 14pt;
-        line-height: 1.5
-    }
-}
-
-.scs-contents-list__list,
-.scs-contents-list__nested-list {
-    color: #0b0c0c;
-    font-family: "nta", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    font-size: 14px!important;
-    line-height: 1.1428571429;
-    margin: 0;
-    padding: 0;
-    list-style-type: none
-}
-
-@media print {
-    .scs-contents-list__list,
-    .scs-contents-list__nested-list {
-        color: #000000
-    }
-}
-
-@media print {
-    .scs-contents-list__list,
-    .scs-contents-list__nested-list {
-        font-family: sans-serif
-    }
-}
-
-@media (min-width: 40.0625em) {
-    .scs-contents-list__list,
-    .scs-contents-list__nested-list {
-        font-size: 16px;
-        line-height: 1.25
-    }
 }
 
 
 
-.scs-contents-list__link {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-
-
-
-.scs-contents-list__link:focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47
-}
-
-.scs-contents-list__link:link {
-    color: #005ea5
-}
-
-.scs-contents-list__link:visited {
-    color: #4c2c92
-}
-
-.scs-contents-list__link:hover {
-    color: #2b8cc4
-}
-
-.scs-contents-list__link:active {
-    color: #2b8cc4;
-    font-weight: 600;
-}
-
-.scs-contents-list__link:focus {
-    color: #0b0c0c
-}
-
-.scs-contents-list--no-underline .scs-contents-list__link {
-    text-decoration: none
-}
-
-.scs-contents-list--no-underline .scs-contents-list__link:hover,
-.scs-contents-list--no-underline .scs-contents-list__link:focus,
-.scs-contents-list--no-underline .scs-contents-list__link:active {
-    text-decoration: underline
-}
-
-.scs-contents-list__list-item--parent>.scs-contents-list__link {
-    font-weight: bold
-}
-
-.scs-contents-list__list-item {
-    padding-top: 10px!important;
-    line-height: 0.9!important;
-    list-style-type: none;
-    font-size: 16px!important;
-}
-
-@media (min-width: 641px) {
-    .scs-contents-list__list-item {
-        padding-top: 7.5px
-    }
-}
-
-.scs-contents-list__list-item--dashed {
-    margin-left: 25px;
-    padding-right: 25px
-}
-
-.scs-contents-list__list-item--dashed:before {
-  content: "— ";
-  margin-left: -25px;
-  padding-right: 5px;
-}
-
-.direction-rtl .scs-contents-list__list-item--dashed:before {
-    margin-left: 0;
-    margin-right: -25px;
-    padding-right: 0;
-    padding-left: 5px
-}
-
-.lte-ie8 .scs-contents-list__list-item--dashed .scs-contents-list__link {
-    display: inline-block;
-    vertical-align: top
-}
-
-
-// content guide pagination bottom of page
+// pagination for guide layout
 
 .scs-guide-pagination {
     display: block;
@@ -262,14 +58,20 @@
     margin-right: -15px;
 
     a {
-      border-bottom: 1px solid #dcdcdc;
+      color: $scs-colour-blue;
+
+      &:visited {
+        color: $scs-colour-blue;
+      }
+
     }
+
 
     ul {
       padding-left: 1px;
       margin-left: 1px;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 5px!important;
+      margin-bottom: 5px!important;
     }
   }
 
@@ -348,7 +150,6 @@
   }
 
   .scs-guide-pagination__link-icon {
-      font-family: "nta", Arial, sans-serif;
       font-weight: 400;
       text-transform: none;
       font-size: 18px;

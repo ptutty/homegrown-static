@@ -1,0 +1,105 @@
+
+{% extends 'content-withguide.njk' %}
+{% import 'components/guide.njk' as guide %}
+{% import 'components/button.njk' as buttons %}
+
+
+{% block pagetitle %}
+How to write a CV
+{% endblock %}
+
+{% block content_guide %}
+
+<ol class="scs-contents-list__list">
+    <li class="scs-contents-list__list-item scs-contents-list__list-item-active" aria-current="true">
+      Introduction
+    </li>
+
+    <li class="scs-contents-list__list-item " >
+        <a href="cv-targetting.html">Targeting your CV</a>
+    </li>
+
+    <li class="scs-contents-list__list-item ">
+      <a href="#" >
+      Formatting your CV</a>
+    </li>
+
+    <li class="scs-contents-list__list-item  ">
+      <a href="#" >
+      The CARR model</a>
+    </li>
+    <li class="scs-contents-list__list-item ">
+      <a href="#" >
+      Education, skills and work experience</a>
+    </li>
+    <li class="scs-contents-list__list-item">
+      <a href="#" >
+      Interests, references and contact information</a>
+    </li>
+</ol>
+{% endblock %}
+
+
+{% block main_content %}
+
+<h1>Introduction</h1>
+
+<p>A CV is a relevant summary of your education, skills and
+experience and is used by employers to assess your
+suitability for the role. There is no definitive way to write
+a CV but follow some basic rules and your CV is more likely to
+make a positive impact.
+
+</p>
+
+<div role="note" aria-label="Information" class="info-notice">
+<p>On average, an employer will spend
+just 30 seconds on your CV – very little time for you to grab their
+attention.
+ </p>
+</div>
+
+<h3>General tips</h3>
+<ul>
+  <li>Tailor your CV to the organisation.</li>
+  <li>Prioritise the most relevant, important information.</li>
+  <li>Avoid lengthy prose – use a snappy, concise style with emphasis on ‘action’ words.</li>
+  <li>Check spelling, grammar and punctuation.</li>
+  <li>Make sure you tailor your CV for each role you are applying for. </li>
+</ul>
+
+<h3>What is a CV?</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Vsk02E2wxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- next pagination -->
+
+{{ guide.pagination_next({
+  text: "Targeting your CV",
+  href: "cv-targetting.html"
+}) }}
+
+
+{% endblock %}
+
+
+
+{% block related_links %}
+
+<ul>
+  <li><a href="#">CV examples</a></li>
+  <li><a href="#">Cover letters</a></li>
+  <li><a href="#">Assessment centres</a></li>
+
+</ul>
+
+{% endblock %}
+
+
+{% block related_topics %}
+
+<ul>
+  <li><a href="/applications/topic_job-applications.html">Job applications and CVs</a></li>
+</ul>
+
+{% endblock %}

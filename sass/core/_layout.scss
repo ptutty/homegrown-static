@@ -26,74 +26,13 @@
     color: white;
 }
 
-// SCS specific
 
-.scs-content-row {
-
-    margin-top: 30px;
-
-    a {
-      text-decoration: none;
-
-      &:visited {
-        color: #222;
-        text-decoration: none;
-      }
-
-      &:link {
-        color: #222;
-        text-decoration: none;
-      }
-
-      &:visited  {
-      color: #686868;
-      }
-
-      &:hover {
-      color: #1167a8;
-      }
-
-    }
-}
-
-.scs-content {
-  @include tablet {
-    padding-left: 20px!important;
-    padding-right: 25px!important;
-  }
-}
 
 /* right nav boxes */
 .divider--thick {
-  border-top: 1px solid $scs-link-red;
+  border-top: 1px solid $scs-colour-red;
 }
 
 .divider--thin {
-  border-top: 1px solid $scs-divider-grey;
-}
-
-.scs-navigation-side-menu {
-    padding: 20px 0px 10px 0px;
-
-    a {
-      font-size: 18px;
-      font-weight: 500;
-      color: #222;
-      border-bottom: 1px solid #dcdcdc;
-      text-decoration: none;
-    }
-
-    h2 {
-      color: #404040;
-      font-weight: 600;
-      text-transform: none;
-      font-size: 20px;
-      line-height: 1.25;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0px;
-    }
+  border-top: 1px solid $scs-colour-light-grey;
 }

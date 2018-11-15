@@ -3,10 +3,10 @@
     <main class="id7-main-content-area" id="main">
       <header class="id7-main-content-header"></header>
 
-      <div class="id7-main-content scs-content-row">
+      <div class="id7-main-content">
 
-        <div class="row ">
-            <section class="col-sm-8 scs-content">
+        <div class="row scs-content scs-content-pad-top-30">
+            <section class="col-sm-8 scs-content-main-block scs-content-block-pad-20">
 
                 <h1> {% block pagetitle %}{% endblock %}</h1>
 
@@ -24,8 +24,8 @@
       {% endblock %}
     </div>
 
-   <div class="scs-navigation-side-menu divider--thin">
-      <h2 class="sub-heading">Explore the topic</h2>
+   <div class="scs-navigation-side-menu scs-navigation-side-menu-topic divider--thin">
+      <h3 class="sub-heading">Explore the topic</h3>
       {% block related_topics %}
       {% endblock %}
   </div>
