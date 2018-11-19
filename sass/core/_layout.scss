@@ -1,8 +1,15 @@
 
 // ID7 template over-rides
 
+
+
 .id7-navigation .navbar-primary {
-    background-color: #ef4050!important;
+    background-color: #197b96!important;
+}
+
+.id7-navigation .navbar-primary .navbar-nav>li:hover,.id7-navigation .navbar-primary .navbar-nav>li:focus {
+    color: white;
+    background-color: #146278!important;
 }
 
 .id7-navigation .navbar-nav>li {
@@ -18,19 +25,46 @@
 }
 
 .id7-utility-masthead {
-    background-color: #3e4146!important;
+    background-image: url("/static-files/images/masthead_1170x110_pg_business.jpg")!important;
 }
 
+
+
 .id7-page-footer .id7-app-footer {
-    background: #ef4050!important;
+    background: #197b96!important;
     color: white;
+}
+
+@include tablet {
+  .id7-left-border {
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-image: url("/static-files/images/lhs_375x1200_pg_business.jpg")!important;
+  }
+
+  .id7-left-border {
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-image: url("/static-files/images/rhsborder-greyshafts.jpg")!important;
+  }
+}
+
+
+.boxstyle_.box5, .boxstyle-xs.box5, .boxstyle-sm.box5, .boxstyle-md.box5, .boxstyle-lg.box5 {
+    border: 0;
+    background: #3f4246!important;
+    color: white!important;
+
+    li {
+      color: white!important;
+    }
 }
 
 
 
 /* right nav boxes */
 .divider--thick {
-  border-top: 1px solid $scs-colour-red;
+  border-top: 2px solid $scs-colour-dark-blue;
 }
 
 .divider--thin {
