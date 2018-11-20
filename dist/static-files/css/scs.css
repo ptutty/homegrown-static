@@ -436,6 +436,9 @@ h5.scs-topic-atoz {
   height: 1px !important;
   overflow: hidden !important; }
 
+.scs-homepage .scs-helpdesk a, .scs-homepage .scs-helpdesk a:link, .scs-homepage .scs-helpdesk a:visited {
+  color: #3f4246; }
+
 .scs-homepage .colour-box {
   background-color: #5698d2;
   color: white; }
