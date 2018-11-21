@@ -1,5 +1,10 @@
-/* typography */
-
+/* white space */
+.scs-content-block-pad {
+  @include tablet {
+    padding-left: 40px!important;
+    padding-right: 0px!important;
+  }
+}
 .scs-content-pad-top-30 {
   margin-top: 30px;
 }
@@ -8,204 +13,159 @@
   margin-top: 20px;
 }
 
+/* typography */
 
-/* right nav boxes */
-.divider--thick {
-  border-top: 2px solid $scs-colour-dark-blue;
+h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  line-height: 36px;
+  border-bottom: 0px;
+  font-weight: 600;
+
+    @media (min-width:768px) {
+      font-size: 48px;
+      line-height: 50px;
+    }
 }
 
-.divider--thin {
-  border-top: 1px solid $scs-colour-light-grey;
+a {
+  text-decoration: underline;
+  color: $scs-colour-blue;
+    &:visited {
+      color: $scs-colour-blue;
+      text-decoration: none;
+    }
+    &:link {
+      color: $scs-colour-blue;;
+    }
+    &:hover {
+    color: $scs-colour-light-blue;
+    }
 }
 
+/* typography for content pages main blockquote */
+.scs-content-main-block {
 
-
-.scs-content-block-pad {
-  @include tablet {
-    padding-left: 40px!important;
-    padding-right: 0px!important;
+  h1.guide-page-title {
+    font-size: 32px!important;
+    @include tablet {
+      font-size: 32px!important;
+      line-height: 50px;
+    }
   }
-}
-
-.scs-content {
-
-  h1,h2,h3,h4,h5,h6,p,ul,li {
-    color: $scs-colour-black;
-   }
 
   h1 {
-      margin-bottom: 30px;
-      font-size: 32px;
-      color: black;
-      line-height: 36px;
-      border-bottom: 0px;
-      font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: 700;
+    @include tablet {
+        font-size: 46px;
+        line-height: 1.25
+    }
+  }
+
+  h2 {
+  margin-bottom: 25px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+
+    @include tablet {
+        font-size: 25px;
+        line-height: 1.25
+    }
+  }
+  h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+
+    @include tablet {
+        font-size: 21px;
+        line-height: 1.25
+    }
+  }
+  p {
+  font-size: $main-font-size;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #0b0c0c;
 
       @include tablet {
-        font-size: 48px;
-        line-height: 50px;
-      }
+        font-size: 18px;
+        line-height: 1.3157894737
+    }
+  }
+  ul {
+    line-height: 1.5;
+    list-style-type: disc;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    margin-left: 5px;
+  }
+  li {
+    font-size: $main-font-size;
+    line-height: 25px;
 
+    @include tablet {
+          font-size: 18px;
+    }
+  }
+  .info-notice {
+      border-left: 1em solid #dee0e2;
+      padding: 1em 0 1em 1em;
+      margin: 2em 0;
+  }
+}
+
+
+/* typography for content page side menu */
+.scs-navigation-side-menu {
+    padding: 20px 0px 10px 0px;
+    font-size: 16px;
+    h2 {
+      font-weight: 600;
+      text-transform: none;
+      font-size: 18px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-weight: 400;
+      text-transform: none;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0px;
+      margin-left: 0px;
+      margin-bottom: 20px;
     }
 
-  a {
-    text-decoration: underline;
-    color: $scs-colour-blue;
+    .scs-side-nav-promo {
+      background: #eee;
+      border: 0;
+      padding: 20px;
+      margin-top: 50px;
+          ul.fa-ul {
+            padding-left: 0;
+            margin-left: 2.14285714em;
+            list-style-type: none;
+          }
 
-      &:visited {
-        color: $scs-colour-blue;
-        text-decoration: none;
-      }
-
-      &:link {
-        color: $scs-colour-blue;;
-      }
-
-      &:hover {
-      color: $scs-colour-light-blue;
-      }
+          p {
+              font-size: 16px;
+          }
+    }
   }
 
-// side nav for topic and content pages
-
-  .scs-navigation-side-menu {
-      padding: 20px 0px 10px 0px;
-      font-size: 16px;
-
-
-      h2 {
-        font-weight: 600;
-        text-transform: none;
-        font-size: 18px;
-        line-height: 1.25;
-        margin-bottom: 10px;
-      }
-
-      h3 {
-        font-weight: 400;
-        text-transform: none;
-        font-size: 16px;
-        line-height: 1.25;
-        margin-bottom: 10px;
-      }
-
-      ul {
-        list-style-type: none;
-        padding-left: 0px;
-        margin-left: 0px;
-        margin-bottom: 20px;
-      }
-
-
-      .scs-side-nav-promo {
-        background: #eee;
-        border: 0;
-        padding: 20px;
-        margin-top: 50px;
-
-            ul.fa-ul {
-              padding-left: 0;
-              margin-left: 2.14285714em;
-              list-style-type: none;
-            }
-
-            p {
-                font-size: 16px;
-            }
-      }
-
-  }
 
   .scs-navigation-side-menu-topic {
     a {
       font-weight: 600 ;
     }
   }
-
-
-
-
-  .scs-content-main-block {
-
-
-    h1.guide-page-title {
-      font-size: 32px!important;
-      @include tablet {
-        font-size: 32px!important;
-        line-height: 50px;
-      }
-    }
-
-    h1 {
-    margin-bottom: 25px;
-    font-size: 21px;
-    font-weight: 700;
-      @include tablet {
-          font-size: 46px;
-          line-height: 1.25
-      }
-    }
-
-    h2 {
-    margin-bottom: 25px;
-    margin-top: 30px;
-    font-size: 18px;
-    font-weight: 700;
-
-      @include tablet {
-          font-size: 25px;
-          line-height: 1.25
-      }
-    }
-
-    h3 {
-      margin-bottom: 25px;
-      font-size: 18px;
-      color: black;
-      font-weight: 700;
-
-      @include tablet {
-          font-size: 21px;
-          line-height: 1.25
-      }
-    }
-
-    p {
-    font-size: $main-font-size;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #0b0c0c;
-
-        @include tablet {
-          font-size: 18px;
-          line-height: 1.3157894737
-      }
-    }
-
-    ul {
-      line-height: 1.5;
-      list-style-type: disc;
-      padding-left: 1em;
-      margin-top: 1.5em;
-      margin-bottom: 2.5em;
-      margin-left: 5px;
-    }
-
-    li {
-      font-size: $main-font-size;
-      line-height: 25px;
-
-      @include tablet {
-            font-size: 18px;
-      }
-    }
-
-    .info-notice {
-        border-left: 1em solid #dee0e2;
-        padding: 1em 0 1em 1em;
-        margin: 2em 0;
-    }
-
-  }
-
-}

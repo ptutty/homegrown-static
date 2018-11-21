@@ -1,4 +1,19 @@
+
+
+
+/* dividers */
+
+.divider--thick {
+  border-top: 2px solid $scs-colour-dark-blue;
+}
+
+.divider--thin {
+  border-top: 1px solid $scs-colour-light-grey;
+}
+
 /* buttons */
+
+
 .scs-button {
     text-decoration: none!important;
     -webkit-font-smoothing: antialiased;
@@ -17,7 +32,7 @@
     border: 2px solid transparent;
     border-radius: 0;
     color: #fff!important;
-    background-color: $id7-brand-blue;
+    background-color: $scs-colour-dark-blue;
     -webkit-box-shadow: 0 2px 0 #003618;
     box-shadow: 0 2px 0 #003618;
     text-align: center;
@@ -25,10 +40,10 @@
     cursor: pointer;
     -webkit-appearance: none;
       &:hover {
-          background-color: $id7-brand-blue-bright;
+          background-color: $scs-colour-light-blue;
         }
       &:focus {
-          background-color: $id7-brand-blue-bright;
+          background-color: $scs-colour-light-blue;
         }
 }
 
