@@ -1,8 +1,6 @@
 
 // ID7 template over-rides
 
-
-
 .id7-navigation .navbar-primary {
     background-color: #197b96!important;
 }
@@ -47,26 +45,4 @@
       background-position: right top;
       background-image: url("/static-files/images/rhsborder-greyshafts.jpg")!important;
   }
-}
-
-
-.boxstyle_.box5, .boxstyle-xs.box5, .boxstyle-sm.box5, .boxstyle-md.box5, .boxstyle-lg.box5 {
-    border: 0;
-    background: #3f4246!important;
-    color: white!important;
-
-    li {
-      color: white!important;
-    }
-}
-
-
-
-/* right nav boxes */
-.divider--thick {
-  border-top: 2px solid $scs-colour-dark-blue;
-}
-
-.divider--thin {
-  border-top: 1px solid $scs-colour-light-grey;
 }

@@ -9,10 +9,21 @@
 }
 
 
+/* right nav boxes */
+.divider--thick {
+  border-top: 2px solid $scs-colour-dark-blue;
+}
+
+.divider--thin {
+  border-top: 1px solid $scs-colour-light-grey;
+}
+
+
+
 .scs-content-block-pad {
   @include tablet {
-    padding-left: 20px!important;
-    padding-right: 25px!important;
+    padding-left: 40px!important;
+    padding-right: 0px!important;
   }
 }
 
@@ -55,9 +66,12 @@
       }
   }
 
+// side nav for topic and content pages
+
   .scs-navigation-side-menu {
       padding: 20px 0px 10px 0px;
       font-size: 16px;
+
 
       h2 {
         font-weight: 600;
@@ -81,6 +95,25 @@
         margin-left: 0px;
         margin-bottom: 20px;
       }
+
+
+      .scs-side-nav-promo {
+        background: #eee;
+        border: 0;
+        padding: 20px;
+        margin-top: 50px;
+
+            ul.fa-ul {
+              padding-left: 0;
+              margin-left: 2.14285714em;
+              list-style-type: none;
+            }
+
+            p {
+                font-size: 16px;
+            }
+      }
+
   }
 
   .scs-navigation-side-menu-topic {

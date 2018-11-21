@@ -34,12 +34,12 @@
     background-position: right top;
     background-image: url("/static-files/images/rhsborder-greyshafts.jpg") !important; } }
 
-.boxstyle_.box5, .boxstyle-xs.box5, .boxstyle-sm.box5, .boxstyle-md.box5, .boxstyle-lg.box5 {
-  border: 0;
-  background: #3f4246 !important;
-  color: white !important; }
-  .boxstyle_.box5 li, .boxstyle-xs.box5 li, .boxstyle-sm.box5 li, .boxstyle-md.box5 li, .boxstyle-lg.box5 li {
-    color: white !important; }
+/* typography */
+.scs-content-pad-top-30 {
+  margin-top: 30px; }
+
+.scs-content-pad-top-20 {
+  margin-top: 20px; }
 
 /* right nav boxes */
 .divider--thick {
@@ -48,17 +48,10 @@
 .divider--thin {
   border-top: 1px solid #bfc1c3; }
 
-/* typography */
-.scs-content-pad-top-30 {
-  margin-top: 30px; }
-
-.scs-content-pad-top-20 {
-  margin-top: 20px; }
-
 @media (min-width: 641px) {
   .scs-content-block-pad {
-    padding-left: 20px !important;
-    padding-right: 25px !important; } }
+    padding-left: 40px !important;
+    padding-right: 0px !important; } }
 
 .scs-content h1, .scs-content h2, .scs-content h3, .scs-content h4, .scs-content h5, .scs-content h6, .scs-content p, .scs-content ul, .scs-content li {
   color: #0b0c0c; }
@@ -106,6 +99,17 @@
     padding-left: 0px;
     margin-left: 0px;
     margin-bottom: 20px; }
+  .scs-content .scs-navigation-side-menu .scs-side-nav-promo {
+    background: #eee;
+    border: 0;
+    padding: 20px;
+    margin-top: 50px; }
+    .scs-content .scs-navigation-side-menu .scs-side-nav-promo ul.fa-ul {
+      padding-left: 0;
+      margin-left: 2.14285714em;
+      list-style-type: none; }
+    .scs-content .scs-navigation-side-menu .scs-side-nav-promo p {
+      font-size: 16px; }
 
 .scs-content .scs-navigation-side-menu-topic a {
   font-weight: 600; }

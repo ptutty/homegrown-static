@@ -1,5 +1,6 @@
 
 {% extends 'topic.njk' %}
+{% import 'components/button.njk' as buttons %}
 
 {% block topic_title %}
 Get work experience
@@ -66,3 +67,20 @@ Get work experience
   <li><a href="/advice/topic_advice-and-appointments.html">Advice and appointments</a></li>
 </ul>
 {% endblock %}
+
+
+{% block topic_promo %}
+    <div class="scs-side-nav-promo " />
+        <h2>myAdvantage work experience opportunities</h2>
+
+    <p>Used by employers specifically looking to recruit Warwick students, all work experience vacancies on myAdvantage are screened by our advisers to ensure you find the best opportunities.</p>
+
+    {{ buttons.basic({
+      text: "Search",
+      href: "https://myadvantage.warwick.ac.uk/students/appointments/",
+      classes: "scs-button--booking"
+    }) }}
+
+
+    </div>
+  {% endblock %}

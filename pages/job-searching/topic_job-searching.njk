@@ -1,5 +1,6 @@
 
 {% extends 'topic.njk' %}
+{% import 'components/button.njk' as buttons %}
 
 {% block topic_title %}
 Job searching
@@ -8,13 +9,6 @@ Job searching
 {% block main_content %}
 
 <ul>
-    <li>
-      <a href="#" >
-        <h3>All vacancies on myAdvantage</h3>
-        <p>Used by employers specifically looking to recruit Warwick students. All vacancies are screened by our advisers to ensure you get the best opportunities.</p>
-      </a>
-    </li>
-
     <li>
       <a href="#" >
         <h3>Building your online profile</h3>
@@ -45,6 +39,13 @@ Job searching
 
       <li>
         <a href="#" >
+          <h3>Job sectors</h3>
+          <p>Are you interested in working in a particular industry? Find careers advice broken down by individual job sectors.</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" >
           <h3>Networking</h3>
           <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         </a>
@@ -54,6 +55,13 @@ Job searching
         <a href="#" >
           <h3>Researching employers</h3>
           <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" >
+          <h3>Vacancies on myAdvantage</h3>
+          <p>Used by employers specifically looking to recruit Warwick students. All vacancies are screened by our advisers to ensure you get the best opportunities.</p>
         </a>
       </li>
 
@@ -83,3 +91,20 @@ Job searching
   <li><a href="/experience/topic_get-work-experience.html">Work experience</a></li>
 </ul>
 {% endblock %}
+
+{% block topic_promo %}
+<div class="scs-side-nav-promo " />
+    <h2>myAdvantage job vacancies</h2>
+
+<p>Used by employers specifically looking to recruit Warwick students, all vacancies on myAdvantage are screened by our advisers to ensure you find the best opportunities.</p>
+
+{{ buttons.basic({
+  text: "Search",
+  href: "https://myadvantage.warwick.ac.uk/students/appointments/",
+  classes: "scs-button--booking"
+}) }}
+
+
+</div>
+
+  {% endblock %}
