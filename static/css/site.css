@@ -1405,8 +1405,7 @@ h1 {
   margin-bottom: 30px;
   font-size: 32px;
   line-height: 36px;
-  border-bottom: 0px;
-  font-weight: 600; }
+  border-bottom: 0px; }
   @media (min-width: 768px) {
     h1 {
       font-size: 48px;
@@ -1645,6 +1644,9 @@ h5.scs-topic-atoz {
     margin-bottom: 0px;
     font-size: 19px; }
 
+h1.guide-topic-title {
+  font-weight: 700; }
+
 .part-navigation-container {
   margin-top: 30px;
   border-bottom: 1px solid #bfc1c3;
@@ -1785,14 +1787,14 @@ h5.scs-topic-atoz {
   height: 1px !important;
   overflow: hidden !important; }
 
+.hp-layout h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500; }
+
 .hp-layout .scs-homepage-mega-links {
-  margin: -20px -20px 40px -20px;
-  padding: 5px 5px 20px 5px;
-  background-color: #98bcf526; }
-  .hp-layout .scs-homepage-mega-links h2 {
-    margin-top: 20px;
-    font-size: 22px;
-    font-weight: 500; }
+  margin: 10px 0px 10px 0px;
+  padding: 5px 5px 20px 5px; }
   .hp-layout .scs-homepage-mega-links .lighten {
     font-weight: 300; }
   .hp-layout .scs-homepage-mega-links h3 {
