@@ -1423,10 +1423,10 @@ a {
     color: #2b8cc4; }
 
 /* typography for content pages main blockquote */
-.scs-content-main-block h1.guide-page-title {
+.scs-content-main-block h2.guide-page-title {
   font-size: 32px !important; }
   @media (min-width: 641px) {
-    .scs-content-main-block h1.guide-page-title {
+    .scs-content-main-block h2.guide-page-title {
       font-size: 32px !important;
       line-height: 50px; } }
 
