@@ -48,3 +48,8 @@ ul.pager > li.previous , ul.pager > li.next {
   font-size: 32px!important;;
   margin-top: 0px!important;
 }
+
+
+ul.pager {
+  margin-left: 0px;
+}
