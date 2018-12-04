@@ -1,29 +1,28 @@
-// referring page can set number of resullts returned - see script tag property 'take'
-window.careersHubFeedConfig = {
+// referring page can set number of resullts returned - see script tag property 'display'
+
+window.careersHubJobFeedConfig = {
     baseURL : 'https://myadvantage.warwick.ac.uk',
     jobsEndpoint : '/api/public/v1/jobs',
-    eventsEndpoint : '/api/public/v1/events',
-    eventDetailURL : '/students/events/detail/',
     jobDetailURL : '/students/jobs/Detail/',
-    take : 10 // you can change this
+    display : 6 // you can change this
 };
 
 window.careersHubFeed = new Vue({
-  el: 'section#careersHubFeed',
+  el: '#jobsList',
   data: {
     items: null,
-    config : window.careersHubFeedConfig
+    config : window.careersHubJobFeedConfig
   },
   beforeCreate() {
-      var take = jQuery('#job_feed_script').attr("take");
-      if (take) {
-        window.careersHubFeedConfig.take = take;
+      var display = jQuery('#jobs-feed-script').attr("display");
+      if (display) {
+        window.careersHubJobFeedConfig.display = display;
       }
   },
   mounted: function(){
     var self = this;
     jQuery.ajax({ // pulls in remote data stored in json format.
-              url: self.config.baseURL + self.config.jobsEndpoint + "?take=" + self.config.take,
+              url: self.config.baseURL + self.config.jobsEndpoint + "?take=" + self.config.display,
               method: 'GET',
               success: function (data) {
                   self.items = data;
@@ -36,15 +35,13 @@ window.careersHubFeed = new Vue({
     },
     methods: {
        addDetailsURL: function() {
-         var self = this;
-
+          var self = this;
           for (i = 0; i < self.items.length; i++)
             {
-              console.log(self.items[i].title);
               self.items[i].detailURL =   self.config.baseURL + self.config.jobDetailURL + self.items[i].id;
             };
 
-          jQuery('ul.media-list').on('click', 'li', function() {
+          jQuery('#jobsList ul.media-list').on('click', 'li', function() {
               event.preventDefault();
               window.location.href = self.items[jQuery(this).index()].detailURL;
            });
