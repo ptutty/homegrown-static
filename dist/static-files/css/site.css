@@ -1423,10 +1423,10 @@ a {
     color: #2b8cc4; }
 
 /* typography for content pages main blockquote */
-.scs-content-main-block h1.guide-page-title {
+.scs-content-main-block h2.guide-page-title {
   font-size: 32px !important; }
   @media (min-width: 641px) {
-    .scs-content-main-block h1.guide-page-title {
+    .scs-content-main-block h2.guide-page-title {
       font-size: 32px !important;
       line-height: 50px; } }
 
@@ -1440,7 +1440,7 @@ a {
       line-height: 1.25; } }
 
 .scs-content-main-block h2 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 30px;
   font-size: 18px;
   font-weight: 700; }
@@ -1450,10 +1450,11 @@ a {
       line-height: 1.25; } }
 
 .scs-content-main-block h3 {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   font-size: 18px;
   color: black;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 35px; }
   @media (min-width: 641px) {
     .scs-content-main-block h3 {
       font-size: 21px;
@@ -1475,7 +1476,8 @@ a {
   padding-left: 1em;
   margin-top: 1.5em;
   margin-bottom: 2.5em;
-  margin-left: 5px; }
+  margin-left: 5px;
+  color: #0b0c0c; }
 
 .scs-content-main-block li {
   font-size: 16px;
@@ -1510,17 +1512,6 @@ a {
     padding-left: 0px;
     margin-left: 0px;
     margin-bottom: 20px; }
-  .scs-navigation-side-menu .scs-side-nav-promo {
-    background: #eee;
-    border: 0;
-    padding: 20px;
-    margin-top: 50px; }
-    .scs-navigation-side-menu .scs-side-nav-promo ul.fa-ul {
-      padding-left: 0;
-      margin-left: 2.14285714em;
-      list-style-type: none; }
-    .scs-navigation-side-menu .scs-side-nav-promo p {
-      font-size: 16px; }
 
 .scs-navigation-side-menu-topic a {
   font-weight: 600; }
@@ -1576,6 +1567,21 @@ a {
   background-repeat: no-repeat;
   background-position: 100% 50%; }
 
+/* right hand promos  */
+.scs-side-nav-promo {
+  border: 0;
+  padding: 20px;
+  margin-top: 50px; }
+  .scs-side-nav-promo ul.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none; }
+  .scs-side-nav-promo p {
+    font-size: 16px; }
+
+.highlighted-event-date > h3 {
+  font-size: 34px; }
+
 .scs-section-pane {
   width: 80%; }
   .scs-section-pane .scs-pane-inner {
@@ -1612,7 +1618,7 @@ a {
         right: 10px;
         float: right;
         content: "\203A";
-        font-size: 20px; }
+        font-size: 32px; }
       .scs-section-pane ul a:hover {
         background: #dee0e2; }
 
@@ -1640,7 +1646,7 @@ h5.scs-topic-atoz {
         line-height: 50px;
         font-weight: 600; } }
   .topic-header h3 {
-    color: #ccc;
+    color: #777;
     margin-bottom: 0px;
     font-size: 19px; }
 
@@ -1803,8 +1809,9 @@ h1.guide-topic-title {
     font-size: 18px;
     font-weight: 600; }
     .hp-layout .scs-homepage-mega-links h3 a {
-      border-bottom: 1px solid #dcdcdc;
       text-decoration: none; }
+    .hp-layout .scs-homepage-mega-links h3 a:hover {
+      color: grey !important; }
   .hp-layout .scs-homepage-mega-links p {
     line-height: 18px;
     font-size: 16px; }

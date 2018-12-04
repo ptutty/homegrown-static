@@ -26,6 +26,15 @@
   <link href="/static-files/css/site.css" rel="stylesheet">
 
   <script src="/static-files/js/id7-bundle.min.js"></script>
+
+  <!-- On sitebuilder scripts placed on page per page basis-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script id="myscript" src="/static-files/js/jobs-feed.js" take="5"></script>
+
+
 </head>
 <body>
   <div class="id7-left-border"></div>
@@ -36,7 +45,7 @@
       <div class="id7-utility-masthead">
         <nav class="id7-utility-bar">
           <!-- Include the utility bar component here if used -->
-          <span class='versioning'> <strong> Development v1.1 / <strong>Last published:</strong>  2018/11/22 10:09 a.m.</span>
+          <span class='versioning'> <strong> Development v1.1 / <strong>Last published:</strong>  2018/12/03 10:43 a.m.</span>
         </nav>
 
         <div class="id7-masthead">
@@ -95,16 +104,17 @@
     <li class="first protected" >
       <a href="/advice/topic_advice-and-appointments.html">Advice and appointments</a>
     </li>
-    <li> <a href="/options/topic_future-options.html">Explore your options</a>
+    <li> <a href="/options/topic_future-options.html">Career options</a>
     </li>
     <li> <a href="/experience/topic_get-work-experience.html">Work experience</a>
     </li>
+    <li> <a href="/job-searching/topic_job-searching.html">Job search strategies</a>
+    </li>
+    <li> <a href="/applications/topic_job-applications.html">Applying for jobs</a>
+    </li>
     <li> <a href="/interviews/topic_interviews.html">Interviews</a>
     </li>
-    <li> <a href="/applications/topic_job-applications.html">Job applications & CVs</a>
-    </li>
-    <li> <a href="/job-searching/topic_job-searching.html">Job searching</a>
-    </li>
+
   </ul>
 </nav>
 
@@ -187,7 +197,7 @@
     <h3><a href="/advice/topic_advice-and-appointments.html">Advice and appointments</a></h3>
 <p>Includes career guidance appointments, drop in sessions, workshops</p>
 
-<h3><a href="">Careers fairs and sector events</a></h3>
+<h3><a href="/job-searching/fair-sector-events.html">Careers fairs and sector events</a></h3>
 <p>Includes where to start, assess your values, skills and strengths</p>
 
 <h3><a href="">Cover letters</a></h3>
@@ -254,43 +264,30 @@ Includes assessement centres, psychometric and aptitude tests, what to expect
 
 
 <div class="row row-spacer equal-height-md">
-  <div class="col-md-4">
-
-<section class="box boxstyle_ box1">
-
-<h2>Upcoming Events</h2>
-<div class="calendarSchedule">
-            <div class="events">
-                <div class="date">Wed 31 Oct '18
-                </div>
-
-        <div class="event">
-          <span class="time">6:30pm:
-</span>
-<a class="url" href="https://warwick.ac.uk/fac/arts/modernlanguages/news/events/?calendarItem=8a1785d865e8039f01663f8c23090633" title="6:30pm - 7pm
-- Modern Records Centre"><span class="title">Exhibition: "Vampires over Italy: Borders, Identity, Pop Culture". Inaugural Speech by Dr Fabio Camilletti (University of Warwick)</span></a></div>
-                    </div>
-                    <br>
-
-            <div class="events">
-                <div class="date">Thu 22 Nov '18
-                </div>
 
 
+  <div class="col-md-4"> <!-- Fluid width widget -->
+<section id="careersHubFeed" class="box boxstyle_ box1"><h2>Latest Jobs</h2>
+
+        <ul class="media-list">
+          <li class="media" v-for="item in items">
+            <div class="media-body">
+              <h4 class="media-heading"> <a href="#"> </a> </h4>
+
+              <p>  </p>
+
+              <p class="event-dates event-dates"> <span class="event-start-time"> <span class="glyphicon glyphicon-map-marker"></span> <em></em> <span class="glyphicon glyphicon-time"></span> <em></em> </span> </p>
+
+              <p>  </p>
+
+            </div>
+
+          </li>
+        </ul>
+        </section>
+  </div>
 
 
-
-        <div class="event"> <span class="time">            7:30pm:
-
-</span><a class="url" href="https://warwick.ac.uk/fac/arts/modernlanguages/news/events/?calendarItem=8a1785d8669b2d230166b09b64961310" title="7:30pm - 8:30pm
-- Literaturhaus, Berlin"><span class="title">Off-campus event: "»Deutsche Arbeit« Geschichte und Aktualität eines ideologischen Selbstbilds": Book presentation with Dr Christine Achinger, , Felix Axster, Iris Därmann, Nikolas Lelle and Andreas Speit</span></a></div>
-
-
-
-</div>
-
-</div>
-</div>
 
 
   <div class="col-md-4">

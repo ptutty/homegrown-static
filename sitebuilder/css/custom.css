@@ -6,6 +6,18 @@
 }
 
 
+
+/* overide some bootstrap stuff */
+
+.media:first-child {
+    margin-top: 25px;
+}
+
+.media {
+    margin-top: 6px;
+}
+
+
 /* restyle table of contents for sitebuilder guide pages */
 
 table.tableOfContentsTable > tbody > tr > td {
@@ -52,4 +64,35 @@ ul.pager > li.previous , ul.pager > li.next {
 
 ul.pager {
   margin-left: 0px;
+}
+
+/* alterations / corrections as per Sara Lever feedback put into site.css */
+
+.topic-header h3 {
+    color: #777;
+}
+
+.scs-button--booking {
+  background-image: url(../images/icon-pointer.png);
+}
+
+.scs-section-pane ul a:after {
+  font-size: 32px;
+}
+
+.scs-content-main-block h2 {
+  margin-bottom: 15px;
+  margin-top: 30px; }
+
+.scs-content-main-block h3 {
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.highlighted-event-date > h3 {
+    font-size: 34px;
+}
+
+.scs-content-main-block ul {
+    color: #0b0c0c;
 }

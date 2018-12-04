@@ -1,7 +1,6 @@
 
 {% extends 'homepage.njk' %}
 
-
 {% block main_content %}
 
 <div class="row scs-homepage-mega-links blue-bkgd-box ">
@@ -13,7 +12,7 @@
     <h3><a href="/advice/topic_advice-and-appointments.html">Advice and appointments</a></h3>
 <p>Includes career guidance appointments, drop in sessions, workshops</p>
 
-<h3><a href="">Careers fairs and sector events</a></h3>
+<h3><a href="/job-searching/fair-sector-events.html">Careers fairs and sector events</a></h3>
 <p>Includes where to start, assess your values, skills and strengths</p>
 
 <h3><a href="">Cover letters</a></h3>
@@ -80,43 +79,30 @@ Includes assessement centres, psychometric and aptitude tests, what to expect
 
 
 <div class="row row-spacer equal-height-md">
-  <div class="col-md-4">
-
-<section class="box boxstyle_ box1">
-
-<h2>Upcoming Events</h2>
-<div class="calendarSchedule">
-            <div class="events">
-                <div class="date">Wed 31 Oct '18
-                </div>
-
-        <div class="event">
-          <span class="time">6:30pm:
-</span>
-<a class="url" href="https://warwick.ac.uk/fac/arts/modernlanguages/news/events/?calendarItem=8a1785d865e8039f01663f8c23090633" title="6:30pm - 7pm
-- Modern Records Centre"><span class="title">Exhibition: "Vampires over Italy: Borders, Identity, Pop Culture". Inaugural Speech by Dr Fabio Camilletti (University of Warwick)</span></a></div>
-                    </div>
-                    <br>
-
-            <div class="events">
-                <div class="date">Thu 22 Nov '18
-                </div>
 
 
+  <div class="col-md-4"> <!-- Fluid width widget -->
+<section id="careersHubFeed" class="box boxstyle_ box1"><h2>Latest Jobs</h2>
+
+        <ul class="media-list">
+          <li class="media" v-for="item in items">
+            <div class="media-body">
+              <h4 class="media-heading"> <a href="#"> {{ item.title }}</a> </h4>
+
+              <p> {{ item.summary }} </p>
+
+              <p class="event-dates event-dates"> <span class="event-start-time"> <span class="glyphicon glyphicon-map-marker"></span> <em>{{ item.city }}</em> <span class="glyphicon glyphicon-time"></span> <em>{{ item.contractHours }}</em> </span> </p>
+
+              <p> {{ item.employerName }} </p>
+
+            </div>
+
+          </li>
+        </ul>
+        </section>
+  </div>
 
 
-
-        <div class="event"> <span class="time">            7:30pm:
-
-</span><a class="url" href="https://warwick.ac.uk/fac/arts/modernlanguages/news/events/?calendarItem=8a1785d8669b2d230166b09b64961310" title="7:30pm - 8:30pm
-- Literaturhaus, Berlin"><span class="title">Off-campus event: "»Deutsche Arbeit« Geschichte und Aktualität eines ideologischen Selbstbilds": Book presentation with Dr Christine Achinger, , Felix Axster, Iris Därmann, Nikolas Lelle and Andreas Speit</span></a></div>
-
-
-
-</div>
-
-</div>
-</div>
 
 
   <div class="col-md-4">

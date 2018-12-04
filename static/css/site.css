@@ -1440,7 +1440,7 @@ a {
       line-height: 1.25; } }
 
 .scs-content-main-block h2 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 30px;
   font-size: 18px;
   font-weight: 700; }
@@ -1450,10 +1450,11 @@ a {
       line-height: 1.25; } }
 
 .scs-content-main-block h3 {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   font-size: 18px;
   color: black;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 35px; }
   @media (min-width: 641px) {
     .scs-content-main-block h3 {
       font-size: 21px;
@@ -1475,7 +1476,8 @@ a {
   padding-left: 1em;
   margin-top: 1.5em;
   margin-bottom: 2.5em;
-  margin-left: 5px; }
+  margin-left: 5px;
+  color: #0b0c0c; }
 
 .scs-content-main-block li {
   font-size: 16px;
@@ -1510,17 +1512,6 @@ a {
     padding-left: 0px;
     margin-left: 0px;
     margin-bottom: 20px; }
-  .scs-navigation-side-menu .scs-side-nav-promo {
-    background: #eee;
-    border: 0;
-    padding: 20px;
-    margin-top: 50px; }
-    .scs-navigation-side-menu .scs-side-nav-promo ul.fa-ul {
-      padding-left: 0;
-      margin-left: 2.14285714em;
-      list-style-type: none; }
-    .scs-navigation-side-menu .scs-side-nav-promo p {
-      font-size: 16px; }
 
 .scs-navigation-side-menu-topic a {
   font-weight: 600; }
@@ -1576,6 +1567,21 @@ a {
   background-repeat: no-repeat;
   background-position: 100% 50%; }
 
+/* right hand promos  */
+.scs-side-nav-promo {
+  border: 0;
+  padding: 20px;
+  margin-top: 50px; }
+  .scs-side-nav-promo ul.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none; }
+  .scs-side-nav-promo p {
+    font-size: 16px; }
+
+.highlighted-event-date > h3 {
+  font-size: 34px; }
+
 .scs-section-pane {
   width: 80%; }
   .scs-section-pane .scs-pane-inner {
@@ -1612,7 +1618,7 @@ a {
         right: 10px;
         float: right;
         content: "\203A";
-        font-size: 20px; }
+        font-size: 32px; }
       .scs-section-pane ul a:hover {
         background: #dee0e2; }
 
@@ -1640,7 +1646,7 @@ h5.scs-topic-atoz {
         line-height: 50px;
         font-weight: 600; } }
   .topic-header h3 {
-    color: #ccc;
+    color: #777;
     margin-bottom: 0px;
     font-size: 19px; }
 
@@ -1803,13 +1809,230 @@ h1.guide-topic-title {
     font-size: 18px;
     font-weight: 600; }
     .hp-layout .scs-homepage-mega-links h3 a {
-      border-bottom: 1px solid #dcdcdc;
       text-decoration: none; }
+    .hp-layout .scs-homepage-mega-links h3 a:hover {
+      color: grey !important; }
   .hp-layout .scs-homepage-mega-links p {
     line-height: 18px;
     font-size: 16px; }
 
-/* this is for a previous employabilty design - remove if not needed */
+/* tile carosel al la Economics */
+#main section.header-image, #main section.header {
+  margin: -20px -20px 0 -20px; }
+
+#main section.full-width {
+  margin: 0 -20px;
+  padding: 35px 20px 20px 20px; }
+
+.btn-primary {
+  color: #fff;
+  color: #fff !important;
+  background-color: #197b96;
+  border-color: #197b96; }
+
+.flex-grid {
+  display: flex;
+  height: 585px;
+  padding: 5px;
+  flex-wrap: wrap; }
+
+.col {
+  flex: 1;
+  padding: 5px;
+  height: 100%; }
+
+.col .top {
+  height: 50%;
+  padding-bottom: 10px; }
+
+.col .bottom {
+  display: flex;
+  height: 50%; }
+
+.col .bottom .left, .col .bottom .right {
+  flex: 1; }
+
+.col .bottom .left {
+  padding-right: 10px; }
+
+.col .inner {
+  background-color: #ddd;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column; }
+
+.top .inner .grid-title {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  display: inline-block;
+  background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(30%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.75) 100%); }
+
+.bottom .left .grid-title, .bottom .right .grid-title {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  display: inline-block;
+  padding: 30px 20px 20px 20px;
+  background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(27%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 27%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 27%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 27%, rgba(0, 0, 0, 0.75) 100%); }
+
+.top .inner {
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.bottom .left .inner {
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.bottom .right .inner {
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.grid-title h2 {
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 2px 2px #000; }
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .flex-grid {
+    display: block;
+    height: 1100px; }
+  .col {
+    height: 49%; }
+  .slick-arrow {
+    top: 10%; } }
+
+@media (max-height: 768px) {
+  .flex-grid {
+    height: 500px; }
+  .top .inner .grid-title {
+    padding: 15px 20px 20px 20px; }
+  .bottom .left .grid-title, .bottom .right .grid-title {
+    padding: 15px 20px 20px 20px; } }
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    top: 10%; }
+  .slick-dots {
+    bottom: 15px; }
+  .flex-grid {
+    display: block;
+    height: 800px; }
+  .col {
+    height: 50%; }
+  #main section.full-width {
+    padding: 35px 10px 10px 10px; } }
+
+/*Slider styling */
+* {
+  /* Fixes issue with slider container going full width */
+  min-width: 0;
+  min-height: 0; }
+
+.col .left-slider {
+  height: 100%; }
+
+.col .slider, .slick-list, .slick-track, .slick-slide, .slick-slide > div, .slider-inner {
+  height: 100%;
+  position: relative; }
+
+.slider .slider-inner {
+  background-size: cover;
+  background-position: center; }
+
+.slick-slide .grid-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 30px 30px 15px;
+  display: inline-block;
+  background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.75) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(15%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.75) 100%); }
+
+.slick-arrow {
+  color: transparent;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(221, 221, 221, 0.8);
+  border: none; }
+
+.slick-previous .fa-chevron-right {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 1.7em;
+  margin: 5px 0 0 5px; }
+
+.slick-next .fa-chevron-left {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 1.7em;
+  margin: 5px 0 0 -5px; }
+
+.slick-previous {
+  right: 15px; }
+
+.slick-next {
+  color: rgba(221, 221, 221, 0.8);
+  left: 15px; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 50%; }
+
+.slick-dots li.slick-active {
+  background: #fff; }
+
+.slick-dots li button {
+  display: none; }
+
+.slick-dots li:hover, .slick-dots li:focus {
+  background: #fff; }
+
 /* dev only styles */
 .versioning {
   font-size: 12px !important;
