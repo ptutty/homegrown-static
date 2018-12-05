@@ -25,7 +25,7 @@ window.eventList = new Vue({
       })
       .catch(function (error) {
           console.log("cannot get any results");
-          jQuery("#eventList > ul.media-list").html("<li>Cannot displays any event at this time.</li>");
+          jQuery("#eventList > ul.media-list").html("<li>Cannot displays any events at this time.</li>");
       });
     },
     beforeCreate() {

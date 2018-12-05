@@ -86,6 +86,24 @@ a {
         line-height: 1.25
     }
   }
+
+  h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    margin-top: 35px;
+
+    @include tablet {
+        font-size: 19px;
+        line-height: 1.25
+    }
+  }
+
+
+
+
+
   p {
   font-size: $main-font-size;
   line-height: 1.2;
@@ -100,6 +118,15 @@ a {
   ul {
     line-height: 1.5;
     list-style-type: disc;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    margin-left: 5px;
+    color: #0b0c0c;
+  }
+
+  ol {
+    line-height: 1.5;
     padding-left: 1em;
     margin-top: 1.5em;
     margin-bottom: 2.5em;
