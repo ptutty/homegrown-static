@@ -1,19 +1,30 @@
-
 <html>
 <head>
 <link href="/services/careers2018/static-files/css/custom.css" rel="stylesheet" type="text/css" >
-<script>
 
-jQuery( document ).ready(function($) {
-    var h1_text = $(".id7-page-title > h1").text().trim();
-    $(".scs-content-main-block > h2").eq(0).replaceWith("<h1>" + h1_text +  "</h1>");
-});
+<script src="/services/careers2018/static-files/js/content-page.js"> </script>
+<script src="/services/careers2018/static-files/js/partials.js"> </script>
+
+<script>
+/* loads partial HTML file from central location for use with frequently repeated and updated content
+
+1. include partials.js
+2. call Partial.getPromo(path) which correct path to you HTML partial
+3. make sure you have div with id = "promo-container" inside div.scs-navigation-side-menu-topic
+4. comment out line below if you wish to include your own page promo or know at all
+*/
+
+Partials.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
 </script>
+
+
+
 
 </head>
 
 
 <body>
+
 <div class="row scs-content-pad-top-30">
   <section class="col-sm-8 scs-content-main-block scs-content-block-pad">
     <h2> Careers guidance appointments </h2>
@@ -61,34 +72,15 @@ jQuery( document ).ready(function($) {
 
     </div>
 
+	<!-- promos rendered below -->
     <div class="scs-navigation-side-menu scs-navigation-side-menu-topic divider--thin">
-      <h3 class="sub-heading">Explore the topic</h3>
-
-      <ul>
-        <li><a href="topic_advice-and-appointments.html">Advice and appointments</a> </li>
-      </ul>
-
-      <div class="divider--thin"> </div>
-
-      <div class="scs-side-nav-promo">
-        <h2>Drop in service</h2>
-
-        <p>Talk to our staff on a first come first served basis no appointment needed.</p>
-
-        <ul class="fa-ul">
-          <li class="line-spacing"><span class="fa-li"><i class="fa fa-check "></i></span>General advice</li>
-          <li class="line-spacing"><span class="fa-li"><i class="fa fa-check"></i></span> Job search advice</li>
-          <li class="line-spacing"><span class="fa-li"><i class="fa fa-check"></i></span> CV checking</li>
-        </ul>
-
-        <p>You can find us in the <a href="#">Oculus building</a><br />
-           8.30 &ndash; 2.00pm Mondays to Fridays during term time.</p>
-
-      </div>
+      <div id="promo-container"></div>
 
     </div>
 
   </aside>
 </div>
+
+
 </body>
 </html>
