@@ -5,11 +5,6 @@ Contructs the 'explore the topic link' that appears on all content pages.
 (function ($) {
 
   $(function() {
-
-    // h1 fudge
-    var h1_text = $(".id7-page-title > h1").text().trim();
-    $(".scs-content-main-block > h2").eq(0).replaceWith("<h1>" + h1_text +  "</h1>");
-
     // adds parent topic link
     if ( $("div.scs-navigation-side-menu-topic").length === 1 ) {
       // get the parent topic based on sitebuilder top nav
@@ -20,5 +15,13 @@ Contructs the 'explore the topic link' that appears on all content pages.
       var topic_nav = "<h3 class='sub-heading'>Explore the topic</h3><ul><li>" + topic_nav_link + "</li></ul><div class='divider--thin'> </div>";
       $("div.scs-navigation-side-menu-topic").prepend(topic_nav);
     }
+
+    // h1 hack
+    $(function() {
+      var h1_text = $(".id7-page-title > h1").text().trim();
+      $(".scs-content-main-block > h2").eq(0).replaceWith("<h1>" + h1_text +  "</h1>");
+    });
+
+    
   });
 } (jQuery) );

@@ -2,23 +2,24 @@
 <head>
 <link href="/services/careers2018/static-files/css/custom.css" rel="stylesheet" type="text/css" >
 
-<script src="/services/careers2018/static-files/js/content-page.js"> </script>
-<script src="/services/careers2018/static-files/js/partials.js"> </script>
+<script src="/services/careers2018/static-files/js/scs-helper-functions-2019.js"> </script>
 
 <script>
-/* loads partial HTML file from central location for use with frequently repeated and updated content
 
-1. include partials.js
-2. call Partial.getPromo(path) which correct path to you HTML partial
-3. make sure you have div with id = "promo-container" inside div.scs-navigation-side-menu-topic
-4. comment out line below if you wish to include your own page promo or know at all
-*/
+/*
+PAGE TYPES:
+content page = 1
+guide page = 2
+topic page = 3
+homepage = 0  */
 
-Partials.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
+// set page type
+scsFunctions.pageTypeSet(1);
+
+// pulls in frequently repeated and updated content promos from /partials/righthand-promo-widgets/
+scsFunctions.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
+
 </script>
-
-
-
 
 </head>
 
