@@ -1,5 +1,5 @@
 
-var scsFunctions =  (function ($, window) {
+var careersApp =  (function ($, window) {
 
   // private methods and vars
   var pageType = null;

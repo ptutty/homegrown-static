@@ -1,8 +1,27 @@
 <html>
-	<head>
-<link href="/services/careers2018/static-files/css/custom.css" rel="stylesheet" type="text/css">
+<head>
+<link href="/services/careers2018/static-files/css/custom.css" rel="stylesheet" type="text/css" >
 <script src="/services/careers2018/static-files/js/guidepages.js"></script>
-	</head>
+<script src="https://warwick.ac.uk/services/careers2018/static-files/js/careersapp.js"> </script>
+
+<script>
+/*
+PAGE TYPES:
+content page = 1
+guide page = 2
+topic page = 3
+homepage = 0  */
+
+// set page type
+careersApp.pageTypeSet(2);
+// pulls in frequently repeated and updated content promos from /partials/righthand-promo-widgets/
+careersApp.getPromo("/partials/righthand-promo-widgets/cvchecking")
+</script>
+
+</head>
+
+
+
 <body>
 
 <div class="row scs-content-pad-top-30">
@@ -13,6 +32,7 @@
       <nav role="navigation" aria-label="Pages in this guide">
         <h2>Contents</h2>
 
+        <!-- sitebuilder content list will rendered below by guide.js -->
         <div id="guide_content_list"> </div>
 
       </nav>
@@ -20,13 +40,15 @@
   </section>
   <aside class="col-sm-4"> </aside>
   <section class="col-sm-8 scs-content-main-block scs-content-block-pad scs-content-pad-top-20">
-    <h2 class="guide-page-title">title here </h2>
-<!-- content goes here -->
+
+	  <!-- guide page content goes below -->
 
 
 
 <!-- end content -->
-</section>
+
+
+  </section>
   <div class="col-sm-1"> </div>
 
   <aside class="col-sm-3">
@@ -42,25 +64,9 @@
     </div>
 
     <div class="scs-navigation-side-menu scs-navigation-side-menu-topic divider--thin">
-      <h3 class="sub-heading">Explore the topic</h3>
-
-      <ul>
-        <li><a href="topic_advice-and-appointments.html">Job search strategies</a> </li>
-      </ul>
+      <div id="promo-container"></div>
 
     </div>
-
-    <div class="divider--thin"> </div>
-<!-- promo widget -->
-    <div class="scs-side-nav-promo box boxstyle_ box5 highlighted-event-date">
-      <p>The next Career Fair.</p>
-      <h3>2 March 2019</h3>
-<strong>Warwick China Careers Fair</strong> <br />
-       <br />
-      <p><a href="https://myadvantage.warwick.ac.uk/students/events">Full list of fairs</a> </p>
-    </div>
-
-	<!-- end promo widget -->
 
   </aside>
 </div>

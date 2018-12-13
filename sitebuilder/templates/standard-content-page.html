@@ -1,11 +1,8 @@
 <html>
 <head>
 <link href="/services/careers2018/static-files/css/custom.css" rel="stylesheet" type="text/css" >
-
-<script src="/services/careers2018/static-files/js/scs-helper-functions-2019.js"> </script>
-
+<script src="https://warwick.ac.uk/services/careers2018/static-files/js/careersapp.js"> </script>
 <script>
-
 /*
 PAGE TYPES:
 content page = 1
@@ -14,11 +11,9 @@ topic page = 3
 homepage = 0  */
 
 // set page type
-scsFunctions.pageTypeSet(1);
-
+careersApp.pageTypeSet(1);
 // pulls in frequently repeated and updated content promos from /partials/righthand-promo-widgets/
-scsFunctions.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
-
+careersApp.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
 </script>
 
 </head>
@@ -28,8 +23,10 @@ scsFunctions.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
 
 <div class="row scs-content-pad-top-30">
   <section class="col-sm-8 scs-content-main-block scs-content-block-pad">
+    <!-- this is replaced by a h1 by careersApp.pageTypeSet(1)-->
     <h2> Careers guidance appointments </h2>
 
+    <!-- content goes here -->
     <p>Our careers consultants &amp; careers project officers support students and graduates with more in depth discussions around career planning and career choices including: </p>
 
     <ul>
@@ -59,6 +56,8 @@ scsFunctions.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
     </div>
 
 <a href="https://myadvantage.warwick.ac.uk/students/appointments/" role="button" draggable="false" class="scs-button scs-button--booking"> Book an appointment </a> </section>
+
+<!-- end content -->
   <div class="col-sm-1"></div>
 
   <aside class="col-sm-3">
@@ -72,9 +71,10 @@ scsFunctions.getPromo("/partials/righthand-promo-widgets/careers-drop-in");
       </ul>
 
     </div>
-
-	<!-- promos rendered below -->
+    <!-- parent topic link will be added below using careersApp.pageTypeSet(1) (see html head)  -->
     <div class="scs-navigation-side-menu scs-navigation-side-menu-topic divider--thin">
+
+      <!-- promo widget will be added below using careersApp.getPromo(see html head) if needed -->
       <div id="promo-container"></div>
 
     </div>
