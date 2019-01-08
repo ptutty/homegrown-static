@@ -29,7 +29,7 @@ var careersApp =  (function ($, window) {
         var topic_href = topic.attr('href');
         var topic_title = topic.html();
         var topic_nav_link = "<a href='" + topic_href + "'>" + topic_title + "</a>";
-        var topic_nav = "<h3 class='sub-heading'>Explore the topic</h3><ul><li>" + topic_nav_link + "</li></ul><div class='divider--thin'> </div>";
+        var topic_nav = "<h3 class='sub-heading'>Explore the topic</h3><ul><li>" + topic_nav_link + "</li></ul>";
         $("div.scs-navigation-side-menu-topic").prepend(topic_nav);
       }
     });

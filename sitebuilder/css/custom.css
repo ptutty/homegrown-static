@@ -85,8 +85,8 @@ ul.pager {
   margin-top: 30px; }
 
 .scs-content-main-block h3 {
-  margin-bottom: 5px;
-  margin-top: 40px;
+    margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 .highlighted-event-date > h3 {
@@ -96,3 +96,23 @@ ul.pager {
 .scs-content-main-block ul {
     color: #0b0c0c;
 }
+
+.scs-content-main-block h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  margin-top: 35px; }
+  @media (min-width: 641px) {
+    .scs-content-main-block h4 {
+      font-size: 19px;
+      line-height: 1.25; } }
+
+
+.scs-content-main-block ol {
+  line-height: 1.5;
+  padding-left: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+  margin-left: 5px;
+  color: #0b0c0c; }
