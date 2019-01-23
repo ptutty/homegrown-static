@@ -115,4 +115,100 @@ ul.pager {
   margin-top: 1.5em;
   margin-bottom: 2.5em;
   margin-left: 5px;
-  color: #0b0c0c; }
+  color: #0b0c0c;
+}
+
+
+
+/* important inline messages */
+
+.scs-content-main-block .help-notice {
+    margin: 2em 0;
+    background-image: url(https://assets.publishing.service.gov.uk/government-frontend/icon-important-aeffdce3628ff720dda0db8bb30572d79fb7feed64ceccee7ed851b0322955aa.png);
+    background-size: 34px 34px;
+    background-repeat: no-repeat;
+    min-height: 34px;
+    padding-left: 34px;
+    padding-top: 7px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .scs-content-main-block .help-notice {
+        background-image:url(https://assets.publishing.service.gov.uk/government-frontend/icon-important-2x-15f32221dd9b29965739cc2fc83081832d8f284b634405037df581e3d4e61d53.png)
+    }
+}
+
+@media (min-width: 641px) {
+    .scs-content-main-block .help-notice {
+        padding-top:4.5px
+    }
+
+
+
+
+.scs-content-main-block .help-notice p {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-left: 1em
+}
+
+@media (min-width: 641px) {
+    .scs-content-main-block .help-notice p {
+        font-size:19px;
+        line-height: 1.3157894737
+    }
+}
+
+
+/* inline contact or address */
+
+.scs-content-main-block .address,.scs-content-main-block .contact {
+    border-left: 1px solid #bfc1c3;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.scs-content-main-block .contact {
+    position: relative
+}
+
+.scs-content-main-block .contact .content {
+    float: none;
+    width: 100%
+}
+
+.scs-content-main-block .contact .content h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 5px
+}
+
+@media (min-width: 641px) {
+    .scs-content-main-block .contact .content h3 {
+        font-size:19px;
+        line-height: 1.3157894737
+    }
+}
+
+.scs-content-main-block.contact .content .email-url-number .email {
+    word-wrap: break-word
+}
+
+.scs-content-main-block .contact .content .email-url-number span {
+    display: block
+}
+
+.scs-content-main-block .contact .content .comments {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.1428571429
+}
