@@ -1,44 +1,58 @@
+# A local dev environment for easy deploying static sites to Netlify
 
 
-# Warwick SCS Prototyping Kit and Design System
 
-This kit provides:
+## Local prototyping environment
 
-1. **A local development environment with design components, templates and a way to quickly publish prototypes to share with others.**
-2. **Documentation on how to use the SCS design system**
+This codebase allows you to quickly get a local node server running using:
 
 
-The kit is not a production framework. Don't use the kit as a base for a production service.
+- Nunjucks for HTML templating
+- Node Express to serve pages
+- Gulp for SASS compiling, LiveReload and building static HTML to /dist.
 
-## local prototyping environment
 
-This codebase allows you to quickly get a local node server running using nunjucks templating, Express, SASS compiling and LiveReload. This drastically speed up development time during the prototyping/development phase. It includes the latest warwick ID7 design as nunjucks templates.
+    npm install
+
+This will install all the Node modules required
+
+
+    npm start
+
+To spin up local server http://localhost:3000/
+
+Install LiveReload extension for chrome and enable live reloading for site when editing.
+
+
+## Requirements
+
+You'll need:
+
+
+- Node.js 8.x.x and NPM
+
+**optional**
+
+
+- Atom (or equivalent text editor)
+- Command line tools
+- Git desktop of equivalent
+
 
 The codebase includes build scripts for things like SASS to CSS and static site generation. Running:
 
-```javascript
-  gulp build
-```
+
+      gulp build
+
 
 Will deploy the site in the dist directory for use as a demo you can share with others.
-
 Pushing changes back to the remote git repository will deploy these static build files to the following address:
 
 https://warwick-scs.netlify.com/
 
-See the [technical docs for more details of how to get setup](docs/technical/introduction.md)
+More documents
 
-## Design system
 
-The docs folder contains a design system and guidance how to use the various typographical and design elements in Student Careers and Skills design system
-
-### styles
-Guides for applying layout, typography, colour and images.
-
-### components
-Save time with reusable, accessible components for forms, navigation, panels, tables and more.
-
-### patterns
-Help users complete common tasks like entering names and addresses, filling in forms and creating accounts.
-
-See the [style guide docs for more details of how to use](docs/style-guide/introduction.md)
+- making pages with nunjucks
+- Netlify publishing
+##
