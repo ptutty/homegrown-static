@@ -1,4 +1,4 @@
-# A local dev environment for easy deploying static sites to Netlify
+# A local dev environment for easy deployment of static sites to Netlify
 
 
 
